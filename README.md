@@ -18,3 +18,7 @@ Vivek Tripathi LCS2023004   CS  vivektripathi92006@gmail.com    vivek23024
 
 
 Raghvendra Mishra Lcs2023026 CS raghavmishra9492@gmail.com raghavmishra8382
+
+Sai Lokesh Reddy Chintalapudi LIT2023057 IT
+Sailokesh.chintalapudi@gmail.com Sailokesh321
+
