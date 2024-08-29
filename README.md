@@ -19,6 +19,10 @@ Akshat Singh LCS2023042   CS  akshat88singh@gmail.com    Luv888
 
 Raghvendra Mishra Lcs2023026 CS raghavmishra9492@gmail.com raghavmishra8382
 
+Aditya Raj  LIT2023003 IT raj779226@gmail.com  Aditya2023003
+
 Sai Lokesh Reddy Chintalapudi LIT2023057 IT
 Sailokesh.chintalapudi@gmail.com Sailokesh321
+
+
 
