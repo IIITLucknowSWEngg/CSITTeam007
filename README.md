@@ -1,9 +1,9 @@
 # CSITTeam007
 CSITTeam007
 
-TEAM NAME : 
+TEAM NAME : Agile Engineers
 
-PROJECT IDEA : 
+PROJECT IDEA : Zomato clone
 
 TEAM MEMBERS :-
 
