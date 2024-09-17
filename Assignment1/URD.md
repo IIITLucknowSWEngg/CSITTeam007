@@ -81,3 +81,77 @@ The platform will be deployed as a cloud-based solution with web and mobile appl
 - **Restaurant**: A business providing food services.
 - **Delivery**: The process of transporting the order to the customer.
 
+## 6. Non-functional Requirements
+
+### 6.1 Performance Requirements
+- The system must support **500,000 concurrent users**.
+- The response time for **search queries** should be less than **2 seconds**.
+
+### 6.2 Security Requirements
+- User data must be **encrypted using AES-256**.
+- Support **two-factor authentication (2FA)** for user login.
+- Ensure **PCI-DSS compliance** for payment processing.
+
+### 6.3 Usability Requirements
+- The mobile application must adhere to platform-specific **UI/UX guidelines for iOS and Android**.
+- Provide **accessibility options**, such as support for screen readers.
+
+### 6.4 Reliability and Availability
+- Ensure **99.9% uptime** for the cloud service.
+- Implement **backup and disaster recovery solutions** to prevent data loss.
+
+### 6.5 Compliance Requirements
+- The platform must adhere to **local regulations** regarding food safety and delivery services.
+- Ensure that **user content (reviews)** complies with local laws.
+
+## 7. System Constraints
+
+### 7.1 Assumptions
+- Users will primarily access the platform via **smartphones**.
+- The **internet** is available to all users, and order placement requires an **active connection**.
+
+### 7.2 Design Constraints
+- The system must use existing **third-party APIs** for payment processing and GPS tracking.
+- The mobile app must not exceed **150 MB** for fast download and installation.
+
+### 7.3 Hardware/Software Constraints
+- The platform should be compatible with **web browsers** (Chrome, Firefox, Safari) and **iOS/Android devices**.
+
+## 8. Usage Scenarios
+
+### 8.1 User Workflow
+- A customer logs into the platform using **social media credentials**.
+- They **search for nearby restaurants** and browse the menu.
+- The customer **places an order** and makes a **payment**.
+- They **track the order in real-time** and receive notifications about the **delivery status**.
+
+### 8.2 Business Processes
+- The platform will offer both **free and premium features**, such as **priority delivery** for premium users.
+
+## 9. Conceptual Models
+
+### 9.1 System Context Diagram
+- The system context diagram shows how the food delivery platform interacts with external systems like **payment gateways**, **GPS services**, and **social media platforms**.
+
+### 9.2 High-Level Architecture Diagram
+- The architecture diagram will illustrate the platform’s primary components, including the **web and mobile front-end**, **back-end services**, **databases**, and **third-party integrations**.
+
+## 10. Risks and Assumptions
+
+### 10.1 Risk Factors
+- *Technical Risks*: Difficulty in integrating third-party **APIs for GPS tracking** and **payment processing**.
+- *Market Risks*: Competitors like **Zomato or Uber Eats** could introduce similar features, affecting **user retention**.
+
+### 10.2 Mitigation Strategies
+- Maintain flexibility in the **back-end system** for easy integration with newer APIs.
+- Continuously gather **feedback from users** to improve and introduce **innovative features**.
+
+## 11. Glossary of Terms
+- **ETA**: Estimated Time of Arrival.
+- **Delivery Partner**: Individuals responsible for delivering orders to customers.
+
+## 12. Appendices
+- Additional **diagrams** for system architecture.
+- **Legal documentation** for PCI-DSS compliance.
+
+
