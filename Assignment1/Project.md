@@ -54,4 +54,50 @@
 | **Restaurant Dashboard**| Manage menus, view orders, update order status                 |
 
 ---
+## API Documentation
 
+| Endpoint               | Description                                                                                     |
+|------------------------|-------------------------------------------------------------------------------------------------|
+| *POST /auth/register* | Register a new user.                                                                            |
+| *POST /auth/login*    | Authenticate a user.                                                                            |
+| *GET /restaurants*    | Get a list of restaurants.                                                                      |
+| *GET /restaurants/:id*| Get detailed info of a specific restaurant.                                                     |
+| *POST /orders*        | Place a new order.                                                                              |
+| *GET /orders/:id*     | Get order details.                                                                              |
+
+---
+
+## Database Schema
+
+| Collection           | Structure                                                                                          |
+|----------------------|---------------------------------------------------------------------------------------------------|
+| *User Collection*   | { "_id": "ObjectId", "name": "string", "email": "string", "password": "string", "role": "string", "orders": ["OrderId"], "created_at": "Date" } |
+| *Restaurant Collection* | { "_id": "ObjectId", "name": "string", "location": "string", "menu": ["MenuItemId"], "owner": "UserId", "created_at": "Date" } |
+| *Order Collection*  | { "_id": "ObjectId", "user": "UserId", "restaurant": "RestaurantId", "items": ["MenuItemId"], "total": "number", "status": "string", "created_at": "Date" } |
+
+---
+
+## Contributing
+
+| Step                   | Description                                                                                     |
+|------------------------|-------------------------------------------------------------------------------------------------|
+| *1. Fork Repo*        | Fork the repository.                                                                            |
+| *2. Create Branch*    | Create a new branch for your feature/bugfix.                                                    |
+| *3. Commit Changes*   | Commit your changes.                                                                            |
+| *4. Submit PR*        | Submit a pull request with a detailed description of changes.                                   |
+
+---
+
+## License
+
+| License               | Description                                                                 |
+|-----------------------|-----------------------------------------------------------------------------|
+| *MIT License*        | The project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details. |
+
+---
+
+## Contact
+
+| Role                  | Contact Information                                                       |
+|-----------------------|---------------------------------------------------------------------------|
+| *Project Maintainer* | email@example.com                                                      |
