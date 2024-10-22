@@ -137,7 +137,7 @@ The platform will be deployed as a cloud-based solution with web and mobile appl
 
 ### 10.1 Risk Factors
 - *Technical Risks*: Difficulty in integrating third-party **APIs for GPS tracking** and **payment processing**.
-- *Market Risks*: Competitors like **Zomato or Uber Eats** could introduce similar features, affecting **user retention**.
+- *Market Risks*: Competitors like **Swiggy or Uber Eats** could introduce similar features, affecting **user retention**.
 
 ### 10.2 Mitigation Strategies
 - Maintain flexibility in the **back-end system** for easy integration with newer APIs.
