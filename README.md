@@ -3,8 +3,6 @@ TEAM NAME : Agile Engineers
 
 PROJECT IDEA : Zomato Clone
 
-TEAM LEAD : Raghvendra Mishra
-
 TEAM MEMBERS :
 
 | NAME | ROLL NUMBER | BRANCH | EMAIL ID | GITHUB ID |
