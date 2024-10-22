@@ -12,10 +12,7 @@ The system will provide an interactive environment where users can search for re
 - **Restaurant Owner**: Businesses providing food services listed on the platform.
 - **ETA**: Estimated Time of Arrival.
 
-### 1.4 References
-- Zomato app as a reference platform.
-
-### 1.5 Overview of the Document
+### 1.4 Overview of the Document
 This document contains system objectives, context, functional and non-functional requirements, usage scenarios, conceptual models, risks, and assumptions to ensure that the platform aligns with user needs and business goals.
 
 ## 2. System Overview
