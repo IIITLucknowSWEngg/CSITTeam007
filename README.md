@@ -1,4 +1,3 @@
-![Zomato Logo](https://upload.wikimedia.org/wikipedia/commons/a/a0/Zomato_logo.png)
 # CSITTeam007
 TEAM NAME : Agile Engineers
 
