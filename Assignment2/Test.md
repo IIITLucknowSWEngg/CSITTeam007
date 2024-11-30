@@ -22,7 +22,7 @@
 ### **1. User Module**
 - **Features**:
   - Registration/Login: Account creation and secure login.
-  - Profile Management: Update and view user details.
+  - Profile Management: Update and view customer details.
   - Search: Find restaurants, cuisines, or dishes.
   - Favorites: Save favorite restaurants and dishes.
 
@@ -56,19 +56,19 @@
 ## 4. Objectives
 - Validate functionality across all modules.
 - Ensure data security, especially in payment processes.
-- Test performance under high user traffic.
-- Verify user experience on different devices.
+- Test performance under high customer traffic.
+- Verify customer experience on different devices.
 
 ---
 
 ## 5. Testing Strategy
 ### Types of Testing:
 - **Unit Testing**: Individual components like login or menu display.
-- **Integration Testing**: Interaction between modules, e.g., user orders with restaurants.
+- **Integration Testing**: Interaction between modules, e.g., customer orders with restaurants.
 - **System Testing**: Full system compliance with requirements.
 - **Performance Testing**: Load testing with high traffic (e.g., 10,000 users).
 - **Security Testing**: Vulnerability checks like SQL injection and authentication.
-- **Usability Testing**: Ensure seamless user experience.
+- **Usability Testing**: Ensure seamless customer experience.
 
 ---
 
@@ -88,48 +88,42 @@
 
 ---
 
-# Test Cases for Zomato Clone
+# Feature: User Login
 
-## 1. User Module
+## Scenario: User logs in with valid credentials
 
-| **Test ID**    | **Scenario**        | **Input**             | **Expected Output**                    |
-|----------------|---------------------|-----------------------|----------------------------------------|
-| TCase001       | User Registration   | Valid user details    | User registered successfully.          |
-| TCase002       | User Login          | Valid credentials     | Login successful.                      |
-| TCase003       | Search Restaurants  | Search query          | Relevant results displayed.            |
+### Given:
+The customer is on the login page.
 
----
+### When:
+The customer enters valid credentials (email, password).
 
-## 2. Restaurant Module
-
-| **Test ID**    | **Scenario**        | **Input**             | **Expected Output**                    |
-|----------------|---------------------|-----------------------|----------------------------------------|
-| TCase004       | View Menu           | Restaurant ID         | Menu items displayed.                  |
-| TCase005       | Submit Review       | Valid review text     | Review submitted successfully.         |
+### Then:
+The customer should be successfully logged in.  
+The customer should be redirected to the homepage.
 
 ---
 
-## 3. Order Management Module
+## Chai.js Code:
 
-| **Test ID**    | **Scenario**        | **Input**             | **Expected Output**                    |
-|----------------|---------------------|-----------------------|----------------------------------------|
-| TCase006       | Place Order         | Cart details          | Order placed successfully.             |
-| TCase007       | Payment Processing  | Valid payment data    | Payment processed successfully.        |
+```javascript
+const chai = require('chai');
+const expect = chai.expect;
+const loginPage = require('../pages/loginPage'); 
 
----
+describe('User Login', function() {
+  it('should login customer successfully', function() {
+    
+    loginPage.open();
+    
+    loginPage.enterCredentials('validemail@domain.com', 'validPassword123');
 
-## 4. Delivery Module
+    loginPage.submitLogin();
 
-| **Test ID**    | **Scenario**        | **Input**             | **Expected Output**                    |
-|----------------|---------------------|-----------------------|----------------------------------------|
-| TCase008       | Assign Driver       | Order ID              | Driver assigned to the order.          |
-| TCase009       | Track Order         | Valid order ID        | Real-time location displayed.          |
+    expect(loginPage.getWelcomeMessage()).to.include('Welcome, User');
 
----
+    expect(browser.getUrl()).to.include('/home');
+  });
+});
 
-## 5. Admin Module
 
-| **Test ID**    | **Scenario**        | **Input**             | **Expected Output**                    |
-|----------------|---------------------|-----------------------|----------------------------------------|
-| TCase010       | Add New Restaurant  | Restaurant details    | Restaurant added successfully.         |
-| TCase011       | View Order Reports  | Date range            | Detailed report displayed.            |
