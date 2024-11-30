@@ -92,44 +92,44 @@
 
 ## 1. User Module
 
-| **Test ID** | **Scenario**        | **Input**             | **Expected Output**                    |
-|-------------|---------------------|-----------------------|----------------------------------------|
-| TC001       | User Registration   | Valid user details    | User registered successfully.          |
-| TC002       | User Login          | Valid credentials     | Login successful.                      |
-| TC003       | Search Restaurants  | Search query          | Relevant results displayed.            |
+| **Test ID**    | **Scenario**        | **Input**             | **Expected Output**                    |
+|----------------|---------------------|-----------------------|----------------------------------------|
+| TCase001       | User Registration   | Valid user details    | User registered successfully.          |
+| TCase002       | User Login          | Valid credentials     | Login successful.                      |
+| TCase003       | Search Restaurants  | Search query          | Relevant results displayed.            |
 
 ---
 
 ## 2. Restaurant Module
 
-| **Test ID** | **Scenario**        | **Input**             | **Expected Output**                    |
-|-------------|---------------------|-----------------------|----------------------------------------|
-| TC004       | View Menu           | Restaurant ID         | Menu items displayed.                  |
-| TC005       | Submit Review       | Valid review text     | Review submitted successfully.         |
+| **Test ID**    | **Scenario**        | **Input**             | **Expected Output**                    |
+|----------------|---------------------|-----------------------|----------------------------------------|
+| TCase004       | View Menu           | Restaurant ID         | Menu items displayed.                  |
+| TCase005       | Submit Review       | Valid review text     | Review submitted successfully.         |
 
 ---
 
 ## 3. Order Management Module
 
-| **Test ID** | **Scenario**        | **Input**             | **Expected Output**                    |
-|-------------|---------------------|-----------------------|----------------------------------------|
-| TC006       | Place Order         | Cart details          | Order placed successfully.             |
-| TC007       | Payment Processing  | Valid payment data    | Payment processed successfully.        |
+| **Test ID**    | **Scenario**        | **Input**             | **Expected Output**                    |
+|----------------|---------------------|-----------------------|----------------------------------------|
+| TCase006       | Place Order         | Cart details          | Order placed successfully.             |
+| TCase007       | Payment Processing  | Valid payment data    | Payment processed successfully.        |
 
 ---
 
 ## 4. Delivery Module
 
-| **Test ID** | **Scenario**        | **Input**             | **Expected Output**                    |
-|-------------|---------------------|-----------------------|----------------------------------------|
-| TC008       | Assign Driver       | Order ID              | Driver assigned to the order.          |
-| TC009       | Track Order         | Valid order ID        | Real-time location displayed.          |
+| **Test ID**    | **Scenario**        | **Input**             | **Expected Output**                    |
+|----------------|---------------------|-----------------------|----------------------------------------|
+| TCase008       | Assign Driver       | Order ID              | Driver assigned to the order.          |
+| TCase009       | Track Order         | Valid order ID        | Real-time location displayed.          |
 
 ---
 
 ## 5. Admin Module
 
-| **Test ID** | **Scenario**        | **Input**             | **Expected Output**                    |
-|-------------|---------------------|-----------------------|----------------------------------------|
-| TC010       | Add New Restaurant  | Restaurant details    | Restaurant added successfully.         |
-| TC011       | View Order Reports  | Date range            | Detailed report displayed.            |
+| **Test ID**    | **Scenario**        | **Input**             | **Expected Output**                    |
+|----------------|---------------------|-----------------------|----------------------------------------|
+| TCase010       | Add New Restaurant  | Restaurant details    | Restaurant added successfully.         |
+| TCase011       | View Order Reports  | Date range            | Detailed report displayed.            |
