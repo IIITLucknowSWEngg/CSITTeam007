@@ -89,7 +89,7 @@
 ---
 
 ## 7. Test Cases
-### Feature: Customer Login
+## <u>Feature: Customer Login</u>
 
 ### *Scenario: Customer logs in with valid credentials*
 
