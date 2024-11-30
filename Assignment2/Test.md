@@ -8,7 +8,7 @@
 
 ## 2. Scope
 ### Components to Test:
-- **User Module**: Registration, login, profile management, search, and favorites.
+- **Customer Module**: Registration, login, profile management, search, and favorites.
 - **Restaurant Module**: Menu display, reviews, and ratings.
 - **Order Management Module**: Placement, modification, and payment processing.
 - **Delivery Module**: Assign orders and track deliveries.
@@ -19,7 +19,7 @@
 
 ## 3. Modules Overview
 
-### **1. User Module**
+### **1. Customer Module**
 - **Features**:
   - Registration/Login: Account creation and secure login.
   - Profile Management: Update and view customer details.
@@ -74,7 +74,7 @@
 
 ## 6. Test Environment
 - **Hardware**:
-  - User Devices: Mobile (Android/iOS), Desktop.
+  - Customer Devices: Mobile (Android/iOS), Desktop.
   - Server: 16-core CPU, 32 GB RAM, SSD storage.
 
 - **Software**:
@@ -88,9 +88,10 @@
 
 ---
 
-# Feature: User Login
+## 7. Test Cases
+### Feature: Customer Login
 
-## Scenario: User logs in with valid credentials
+### *Scenario: Customer logs in with valid credentials*
 
 ### Given:
 The customer is on the login page.
@@ -111,7 +112,7 @@ const chai = require('chai');
 const expect = chai.expect;
 const loginPage = require('../pages/loginPage'); 
 
-describe('User Login', function() {
+describe('Customer Login', function() {
   it('should login customer successfully', function() {
     
     loginPage.open();
@@ -120,7 +121,7 @@ describe('User Login', function() {
 
     loginPage.submitLogin();
 
-    expect(loginPage.getWelcomeMessage()).to.include('Welcome, User');
+    expect(loginPage.getWelcomeMessage()).to.include('Welcome, Customer');
 
     expect(browser.getUrl()).to.include('/home');
   });
