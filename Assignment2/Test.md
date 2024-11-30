@@ -89,17 +89,17 @@
 ---
 
 ## 7. Test Cases
-## <u>Feature: Customer Login</u>
+### Feature: Customer Login
 
 ### *Scenario: Customer logs in with valid credentials*
 
-### Given:
+#### Given:
 The customer is on the login page.
 
-### When:
+#### When:
 The customer enters valid credentials (email, password).
 
-### Then:
+#### Then:
 The customer should be successfully logged in.  
 The customer should be redirected to the homepage.
 
