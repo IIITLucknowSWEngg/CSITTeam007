@@ -88,53 +88,48 @@
 
 ---
 
-## 7. Test Scenarios and Test Cases
-### User Module
-```plaintext
-TC001: User Registration
-- Input: Valid user details
-- Expected Output: User registered successfully
+# Test Cases for Zomato Clone
 
-TC002: User Login
-- Input: Valid credentials
-- Expected Output: Login successful
+## 1. User Module
 
-TC003: Search Restaurants
-- Input: Search query
-- Expected Output: Relevant results displayed
+| **Test ID** | **Scenario**        | **Input**             | **Expected Output**                    |
+|-------------|---------------------|-----------------------|----------------------------------------|
+| TC001       | User Registration   | Valid user details    | User registered successfully.          |
+| TC002       | User Login          | Valid credentials     | Login successful.                      |
+| TC003       | Search Restaurants  | Search query          | Relevant results displayed.            |
 
+---
 
-TC004: View Menu
-- Input: Restaurant ID
-- Expected Output: Menu items displayed
+## 2. Restaurant Module
 
-TC005: Submit Review
-- Input: Valid review text
-- Expected Output: Review submitted successfully
+| **Test ID** | **Scenario**        | **Input**             | **Expected Output**                    |
+|-------------|---------------------|-----------------------|----------------------------------------|
+| TC004       | View Menu           | Restaurant ID         | Menu items displayed.                  |
+| TC005       | Submit Review       | Valid review text     | Review submitted successfully.         |
 
+---
 
-TC006: Place Order
-- Input: Cart details
-- Expected Output: Order placed successfully
+## 3. Order Management Module
 
-TC007: Payment Processing
-- Input: Valid payment data
-- Expected Output: Payment processed successfully
+| **Test ID** | **Scenario**        | **Input**             | **Expected Output**                    |
+|-------------|---------------------|-----------------------|----------------------------------------|
+| TC006       | Place Order         | Cart details          | Order placed successfully.             |
+| TC007       | Payment Processing  | Valid payment data    | Payment processed successfully.        |
 
+---
 
-TC008: Assign Driver
-- Input: Order ID
-- Expected Output: Driver assigned to the order
+## 4. Delivery Module
 
-TC009: Track Order
-- Input: Valid order ID
-- Expected Output: Real-time location displayed
+| **Test ID** | **Scenario**        | **Input**             | **Expected Output**                    |
+|-------------|---------------------|-----------------------|----------------------------------------|
+| TC008       | Assign Driver       | Order ID              | Driver assigned to the order.          |
+| TC009       | Track Order         | Valid order ID        | Real-time location displayed.          |
 
+---
 
-TC010: Add New Restaurant
-- Input: Restaurant details
-- Expected Output: Restaurant added successfully
+## 5. Admin Module
 
-TC011: View Order Reports
-- Input: Date range
-- Expected Output: Detailed report displayed
+| **Test ID** | **Scenario**        | **Input**             | **Expected Output**                    |
+|-------------|---------------------|-----------------------|----------------------------------------|
+| TC010       | Add New Restaurant  | Restaurant details    | Restaurant added successfully.         |
+| TC011       | View Order Reports  | Date range            | Detailed report displayed.            |
