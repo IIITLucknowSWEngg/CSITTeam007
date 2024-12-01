@@ -124,5 +124,45 @@ describe('Customer Login', function() {
     expect(browser.getUrl()).to.include('/home');
   });
 });
+```
+
+# Feature: Restaurant Search
+
+### **Scenario: User searches for restaurants by location**
+
+#### **Given:**
+- The user is logged in and on the homepage.
+
+#### **When:**
+- The user enters a valid location (e.g., "New York") in the search bar.
+
+#### **Then:**
+- The user should see a list of relevant restaurants based in New York.
+
+
+## Chai.js Code:
+
+```javascript
+const chai = require('chai');
+const expect = chai.expect;
+const searchPage = require('../pages/searchPage');
+
+describe('Restaurant Search', function() {
+  it('should display relevant restaurants for New York', function() {
+    
+    searchPage.open();
+   
+    searchPage.enterSearchQuery('New York');
+
+    searchPage.submitSearch();
+
+    expect(searchPage.getResultsCount()).to.be.greaterThan(0);
+
+    expect(searchPage.getResultTitles()).to.include('Restaurant');
+  });
+});
+```
+
+
 
 
