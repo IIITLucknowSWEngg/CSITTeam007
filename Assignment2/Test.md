@@ -89,7 +89,7 @@
 ---
 
 ## 7. Test Cases
-### Feature: Customer Login
+# Feature: Customer Login
 
 ### *Scenario: Customer logs in with valid credentials*
 
@@ -102,8 +102,6 @@ The customer enters valid credentials (email, password).
 #### Then:
 The customer should be successfully logged in.  
 The customer should be redirected to the homepage.
-
----
 
 ## Chai.js Code:
 
