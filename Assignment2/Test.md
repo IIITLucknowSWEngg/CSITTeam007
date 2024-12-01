@@ -162,7 +162,95 @@ describe('Restaurant Search', function() {
   });
 });
 ```
+# Feature: View Menu
+---
 
+### *Scenario: User views the menu of a specific restaurant*
+
+#### *Given:*
+- The user is logged in and on the restaurant’s page.
+
+#### *When:*
+- The user selects a restaurant and views the menu.
+
+#### *Then:*
+- The user should see the list of menu items with their details.
+
+
+## *Chai.js Code:*
+---
+
+javascript
+const chai = require('chai');
+const expect = chai.expect;
+const restaurantPage = require('../pages/restaurantPage'); 
+object
+
+describe('View Menu', function() {
+  it('should display the menu items for a selected restaurant', function() {
+   
+restaurantPage.open();
+
+  restaurantPage.selectRestaurant('The Pizza Place');
+
+   restaurantPage.viewMenu();
+
+ expect(restaurantPage.getMenuItemsCount()).to.be.greaterThan(0);
+
+  expect(restaurantPage.getMenuItemNames()).to.include('Pizza Margherita');
+  });
+});
+
+
+
+#Feature: Place Order
+
+---
+
+### *Scenario: User places an order*
+
+#### *Given:*
+- The user is logged in and has selected items from the menu.
+
+#### *When:*
+- The user adds items to the cart and proceeds to checkout.
+
+#### *Then:*
+- The order should be placed successfully.  
+- The user should see an order confirmation.
+
+---
+
+## *Chai.js Code:*
+
+```javascript
+const chai = require('chai');
+const expect = chai.expect;
+const cartPage = require('../pages/cartPage'); 
+describe('Place Order', function() {
+  it('should place the order successfully', function() {
+      cartPage.open();
+
+   
+    cartPage.addItemToCart('Pizza Margherita');
+
+   
+    cartPage.proceedToCheckout();
+
+
+    cartPage.enterPaymentDetails('1234 5678 9012 3456', '12/25', '123');
+
+   
+    cartPage.submitOrder();
+
+    
+    expect(cartPage.getOrderConfirmationMessage()).to.equal('Order placed successfully');
+
+
+    expect(browser.getUrl()).to.include('/order-details');
+  });
+});
+``
 
 
 
