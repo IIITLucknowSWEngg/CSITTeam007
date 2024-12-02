@@ -177,10 +177,9 @@ describe('Restaurant Search', function() {
 - The user should see the list of menu items with their details.
 
 
-## *Chai.js Code:*
----
+## Chai.js Code:
 
-javascript
+```javascript
 const chai = require('chai');
 const expect = chai.expect;
 const restaurantPage = require('../pages/restaurantPage'); 
@@ -200,7 +199,7 @@ restaurantPage.open();
   expect(restaurantPage.getMenuItemNames()).to.include('Pizza Margherita');
   });
 });
-
+```
 
 
 #Feature: Place Order
@@ -230,22 +229,16 @@ const cartPage = require('../pages/cartPage');
 describe('Place Order', function() {
   it('should place the order successfully', function() {
       cartPage.open();
-
    
     cartPage.addItemToCart('Pizza Margherita');
-
    
     cartPage.proceedToCheckout();
 
-
     cartPage.enterPaymentDetails('1234 5678 9012 3456', '12/25', '123');
-
    
     cartPage.submitOrder();
-
     
     expect(cartPage.getOrderConfirmationMessage()).to.equal('Order placed successfully');
-
 
     expect(browser.getUrl()).to.include('/order-details');
   });
