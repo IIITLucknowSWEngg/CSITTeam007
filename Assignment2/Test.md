@@ -203,7 +203,6 @@ restaurantPage.open();
 
 
 #Feature: Place Order
-
 ---
 
 ### *Scenario: User places an order*
