@@ -202,47 +202,5 @@ restaurantPage.open();
 ```
 
 
-# Feature: Place Order
----
-
-### *Scenario: User places an order*
-
-#### *Given:*
-- The user is logged in and has selected items from the menu.
-
-#### *When:*
-- The user adds items to the cart and proceeds to checkout.
-
-#### *Then:*
-- The order should be placed successfully.  
-- The user should see an order confirmation.
-
----
-
-## *Chai.js Code:*
-
-```javascript
-const chai = require('chai');
-const expect = chai.expect;
-const cartPage = require('../pages/cartPage'); 
-describe('Place Order', function() {
-  it('should place the order successfully', function() {
-      cartPage.open();
-   
-    cartPage.addItemToCart('Pizza Margherita');
-   
-    cartPage.proceedToCheckout();
-
-    cartPage.enterPaymentDetails('1234 5678 9012 3456', '12/25', '123');
-   
-    cartPage.submitOrder();
-    
-    expect(cartPage.getOrderConfirmationMessage()).to.equal('Order placed successfully');
-
-    expect(browser.getUrl()).to.include('/order-details');
-  });
-});
-``
-
 
 
