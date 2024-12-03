@@ -162,44 +162,7 @@ describe('Restaurant Search', function() {
   });
 });
 ```
-# Feature: View Menu
----
 
-### *Scenario: User views the menu of a specific restaurant*
-
-#### *Given:*
-- The user is logged in and on the restaurant’s page.
-
-#### *When:*
-- The user selects a restaurant and views the menu.
-
-#### *Then:*
-- The user should see the list of menu items with their details.
-
-
-## Chai.js Code:
-
-```javascript
-const chai = require('chai');
-const expect = chai.expect;
-const restaurantPage = require('../pages/restaurantPage'); 
-object
-
-describe('View Menu', function() {
-  it('should display the menu items for a selected restaurant', function() {
-   
-restaurantPage.open();
-
-  restaurantPage.selectRestaurant('The Pizza Place');
-
-   restaurantPage.viewMenu();
-
- expect(restaurantPage.getMenuItemsCount()).to.be.greaterThan(0);
-
-  expect(restaurantPage.getMenuItemNames()).to.include('Pizza Margherita');
-  });
-});
-```
 
 
 
