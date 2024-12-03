@@ -52,27 +52,16 @@ The Zomato clone system enables users to request, order, and pay for food via a 
 ---
 
 ## Database Design  
-### ER Diagram  
-**Main Entities:**  
-1. **Users**: `user_id`, `name`, `email`, `password`, `address`.  
-2. **Restaurants**: `restaurant_id`, `name`, `location`, `cuisine`.  
-3. **Menu_Items**: `item_id`, `restaurant_id`, `name`, `price`.  
-4. **Orders**: `order_id`, `user_id`, `restaurant_id`, `status`.  
+![Screenshot 2024-12-03 194425](https://github.com/user-attachments/assets/bdf4d4ad-01a4-42e3-bc28-0142f39a26d2)
+
 
 **Relationships:**  
 - One-to-Many: Restaurants → Menu_Items.  
-- One-to-Many: Users → Orders.  
+- One
+-to-Many: Users → Orders.  
 
 ---
 
 ## API Design Diagram  
 ### Key Endpoints  
-1. **User Module:**  
-   - `POST /users/register`  
-   - `GET /users/profile`  
-2. **Restaurant Module:**  
-   - `GET /restaurants/search`  
-   - `POST /restaurants/add-menu-item`  
-3. **Order Module:**  
-   - `POST /orders/create`  
-   - `GET /orders/track`  
+![api endpoints](https://github.com/user-attachments/assets/f4df1b2d-73c3-4476-9f02-9f217accbb8e)
