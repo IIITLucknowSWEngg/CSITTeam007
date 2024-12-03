@@ -1,12 +1,18 @@
 # Zomato Project Design Documentation  
 
-## Introduction 
- --- 
- ## Purpose 
-This project aims to create a platform for users to discover restaurants, order food, and track deliveries in real time. It also provides tools for restaurants to manage their menu and orders, and delivery agents to fulfill orders efficiently.  
+## Introduction  
 
-## Scope
-The Zomato clone system enables users to request order and pay for food via a mobile app and web app . Restaurants are able to offer services through the same platform. The system includes the mobile application, backend API services, payment processing, real-time communication, and external integration with services like maps and SMS gateways.
+## Purpose  
+This project intends to deliver a seamless food-ordering and delivery experience for users while supporting restaurants and delivery agents with robust tools to optimize operations.  
+
+## Scope  
+The Zomato clone system enables users to request, order, and pay for food via a mobile app and web app. Restaurants are able to offer services through the same platform. The system includes:  
+- Mobile application and web application interfaces.  
+- Backend API services.  
+- Payment processing integration.  
+- Real-time communication.  
+- External integrations with services like maps and SMS gateways.  
+
 ---
 
 ## Frontend Design  
@@ -70,4 +76,3 @@ The Zomato clone system enables users to request order and pay for food via a mo
 3. **Order Module:**  
    - `POST /orders/create`  
    - `GET /orders/track`  
-
