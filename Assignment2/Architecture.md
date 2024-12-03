@@ -72,7 +72,7 @@ Services like Payment Gateways, CDNs, Map Services, Analytics, and Ad Networks s
  
 <img width="819" alt="Screenshot 2024-12-03 at 7 56 40 PM" src="https://github.com/user-attachments/assets/118e7bc7-e06f-4968-9c60-78e331ce70a6">
 
-### Components:
+#### Components:
 
 1. **User Interface**: 
    - Interacts with various services such as authentication, search, and order services.
@@ -99,6 +99,42 @@ Services like Payment Gateways, CDNs, Map Services, Analytics, and Ad Networks s
 
 
 <img width="671" alt="Screenshot 2024-12-03 at 8 03 00 PM" src="https://github.com/user-attachments/assets/acbd9514-f73b-4feb-9363-4b23890f748d">
+
+#### Components:
+
+1. **Restaurant Interface**: 
+   - Represents the service that allows restaurants to interact with the platform.
+   - Handles restaurant-side functionalities like viewing orders and updating the status of orders.
+   
+2. **Restaurant Service**: 
+   - Responsible for managing restaurant-specific data, such as menus and available food items.
+   - Interacts with the search service to display restaurants to users and with the order service to notify about new orders.
+
+3. **Order Management**: 
+   - Helps in managing the state and notifications related to orders from restaurants.
+   - Notifies the restaurant when a new order is placed and tracks the status of orders during their lifecycle.
+  
+### Delivery Excutive interface:
+
+<img width="692" alt="Screenshot 2024-12-03 at 8 08 18 PM" src="https://github.com/user-attachments/assets/4d804316-df79-48a0-b245-8a83785288ea">
+
+### Components:
+
+1. **Delivery Partner Interface**: 
+   - Represents the service that allows delivery partners to interact with the platform.
+   - Handles delivery partner-specific functionalities like accepting orders, updating order status, and tracking delivery progress.
+   
+2. **Delivery Management Service**: 
+   - Responsible for managing the state of deliveries, such as assigning orders to available delivery partners.
+   - Updates the status of deliveries, including when they are in transit, delivered, or canceled.
+
+3. **Order Management**: 
+   - Helps in managing the state and notifications related to orders, including communicating with delivery partners to update them about new orders that need to be delivered.
+
+
+
+
+
 
 
  
