@@ -67,6 +67,42 @@ Services like Payment Gateways, CDNs, Map Services, Analytics, and Ad Networks s
   - Ensures data consistency and availability across all services.
 
  ## 1.3 Component Diagram 🔥
+
+### 1.3.1 Customer feature:
+ 
+<img width="819" alt="Screenshot 2024-12-03 at 7 56 40 PM" src="https://github.com/user-attachments/assets/118e7bc7-e06f-4968-9c60-78e331ce70a6">
+
+### Components:
+
+1. **User Interface**: 
+   - Interacts with various services such as authentication, search, and order services.
+   
+2. **Restaurant Interface**: 
+   - Represents the service that allows restaurants to interact with the platform.
+   
+3. **Order Service**: 
+   - Manages the user's order.
+   - Communicates with the payment service to handle transactions.
+   - Interacts with the restaurant service to notify the restaurant about new orders.
+   
+4. **Payment Service**: 
+   - Handles the financial transactions during the ordering process, ensuring that payments are processed securely.
+
+5. **Order Management**: 
+   - Helps in managing the state and notifications related to orders.
+   - Notifies both the user and restaurant about the order's status.
+
+### 1.3.2 Restaurant Interface:
+
+
+
+
+
+<img width="671" alt="Screenshot 2024-12-03 at 8 03 00 PM" src="https://github.com/user-attachments/assets/acbd9514-f73b-4feb-9363-4b23890f748d">
+
+
+ 
+ 
  
 
 
