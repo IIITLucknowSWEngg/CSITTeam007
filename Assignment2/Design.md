@@ -70,10 +70,3 @@ The primary goal is to offer a seamless food delivery and restaurant discovery e
    - `POST /orders/create`  
    - `GET /orders/track`  
 
-**Diagram:**  
-```plaintext  
-[Frontend (Web/Mobile)]  
-    ↕  
-[API Gateway]  
-    ↕  
-[Backend Services] -> [Database]  
