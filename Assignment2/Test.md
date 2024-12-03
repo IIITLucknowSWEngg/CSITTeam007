@@ -100,7 +100,7 @@ The customer is on the login page.
 The customer enters valid credentials (email, password).
 
 #### Then:
-The customer should be successfully logged in.  
+The customer should be successfully logged in.
 The customer should be redirected to the homepage.
 
 ## Chai.js Code:
@@ -202,7 +202,7 @@ restaurantPage.open();
 ```
 
 
-#Feature: Place Order
+# Feature: Place Order
 ---
 
 ### *Scenario: User places an order*
