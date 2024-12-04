@@ -1,6 +1,6 @@
 # **Use Case Diagrams**
 
-## 1. Happy Case Diagram
+## 1. Happy Path Diagram
 
 ![Happy Case Diagram](https://github.com/IIITLucknowSWEngg/CSITTeam007/blob/main/Assignment2/HappyPath.jpg)
 
