@@ -53,6 +53,8 @@ Services like Payment Gateways, CDNs, Map Services, Analytics, and Ad Networks s
   - Tracks delivery status and updates customers on the progress of their orders.
   - Coordinates with delivery partners for timely delivery.
   - Uses mapping services (e.g., Google Maps) for route optimization.
+ 
+  - <img width="801" alt="Screenshot 2024-12-03 at 7 18 29 PM" src="https://github.com/IIITLucknowSWEngg/CSITTeam007/edit/main/Assignment2/DeployZomato.png">
 
 #### **Analytics Service**:
 - **Description**: Provides insights into user behavior to improve the platform.
