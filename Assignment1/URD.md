@@ -1,38 +1,123 @@
-# **User Requirements Document (URD)**
+# **User Requirements Document (URD) for Zomato Clone**
 
-## **1. Introduction**
+## **Overview**
 
-### **1.1 Purpose**
-This document outlines the user requirements for the Zomato clone application. It is intended to guide the design, development, and testing of the application to ensure that it meets the needs of its users, including customers, delivery personnel, and restaurant partners.
-
-### **1.2 Scope**
-The Zomato clone will be a food delivery and restaurant discovery mobile application that connects customers with restaurants and delivery personnel. The app will support searching for restaurants, ordering food, real-time tracking, payment processing, and communication between customers, restaurants, and delivery personnel.
-
-### **1.3 Definitions, Acronyms, and Abbreviations**
-- **Customer/User**: An individual who uses the app to browse, order food, or explore restaurants.
-- **Delivery Partner**: An individual who delivers orders to customers.
-- **Restaurant Partner**: A restaurant or food service business offering food for delivery or dine-in.
-- **Admin**: The entity responsible for managing and overseeing the app’s operations.
-
-### **1.4 References**
-- [Stakeholders.md](https://github.com/IIITLucknowSWEngg/CSITTeam007/blob/main/Assignment1/Stakeholder.md)
-- [Project.md](https://github.com/IIITLucknowSWEngg/CSITTeam007/blob/main/Assignment1/Project.md)
+This document outlines the user requirements for **Zomato**, a food discovery and delivery platform. It is structured to cater to diverse user personas, ensuring seamless experiences for diners, restaurant partners, and admins. The platform aims to connect food lovers with nearby restaurants, providing efficient ordering, reviews, and delivery services.
 
 ---
 
-## **2. User Characteristics**
+## **Table of Contents**
 
-### **2.1 Customers**
-- Smartphone users familiar with app-based food ordering and navigation.
-- Expect seamless browsing, personalized recommendations, and real-time updates on orders.
+1. [User Stories](#1-user-stories)  
+2. [Use Cases](#2-use-cases)  
+3. [Functional Requirements](#3-functional-requirements)  
+4. [Non-Functional Requirements](#4-non-functional-requirements)  
+5. [User Interface Requirements](#5-user-interface-requirements)  
 
-### **2.2 Delivery Partners**
-- Smartphone users who need clear, easy-to-follow instructions for accepting and delivering orders.
-- Require straightforward interfaces for managing deliveries and earnings.
+---
 
-### **2.3 Restaurant Partners**
-- Businesses managing menus, prices, and order processing.
-- Require simple tools to update menu details, manage availability, and track sales.
+## **1. User Stories**
+
+### **User 1: End User (Diner)**  
+- **Scenario**: I want to explore restaurants nearby, read reviews, and order food effortlessly.  
+- **Goals**:
+  1. Search for restaurants by cuisine, location, or ratings.  
+  2. View detailed restaurant menus with pricing and availability.  
+  3. Read and write reviews for restaurants and dishes.  
+  4. Track my food delivery in real time.  
+  5. Use promo codes or discounts for savings.  
+- **Pain Points**:  
+  - Delayed delivery tracking updates.  
+  - Inaccurate or outdated menu information.  
+
+---
+
+### **User 2: Restaurant Partner**  
+- **Scenario**: I own a restaurant and want to attract more customers while managing orders effectively.  
+- **Goals**:
+  1. Register my restaurant with detailed information (menu, pricing, and photos).  
+  2. Receive and process orders seamlessly.  
+  3. Update menu items and pricing dynamically.  
+  4. Monitor sales performance and revenue trends.  
+  5. Respond to customer reviews to maintain a positive image.  
+- **Pain Points**:  
+  - Difficulty in updating menu details quickly.  
+  - Poor visibility into sales metrics and customer preferences.  
+
+---
+
+### **User 3: Delivery Agent**  
+- **Scenario**: I am a delivery agent and want an optimized route to deliver food efficiently.  
+- **Goals**:
+  1. Receive order details and delivery locations promptly.  
+  2. Use integrated maps for optimized navigation.  
+  3. Communicate with customers in case of delays or issues.  
+  4. Track earnings and delivery metrics on my dashboard.  
+- **Pain Points**:  
+  - Inefficient routing leading to delays.  
+  - Limited visibility into daily earnings or tips.  
+
+---
+
+### **User 4: Admin**  
+- **Scenario**: I oversee platform operations and ensure smooth interactions between users, restaurants, and delivery agents.  
+- **Goals**:
+  1. Monitor platform performance and resolve disputes.  
+  2. Approve or reject restaurant listings.  
+  3. Handle customer complaints and refund requests.  
+  4. Generate reports on platform metrics (sales, user activity, etc.).  
+- **Pain Points**:  
+  - Difficulty in resolving disputes due to lack of data logs.  
+  - Inadequate tools for performance monitoring.  
+
+---
+
+## **2. Use Cases**
+
+### **Use Case 1: Food Discovery and Ordering**  
+- **Actor**: End User  
+- **Steps**:  
+  1. Search for restaurants by location, cuisine, or rating.  
+  2. View restaurant details and select items from the menu.  
+  3. Add items to the cart and proceed to checkout.  
+  4. Apply promo codes and make payment using preferred methods.  
+  5. Track the order in real time and receive the delivery.  
+- **Outcome**: The user successfully orders food and enjoys a seamless experience.  
+
+---
+
+### **Use Case 2: Restaurant Management**  
+- **Actor**: Restaurant Partner  
+- **Steps**:  
+  1. Register the restaurant and upload menu details.  
+  2. Update menu items and availability as needed.  
+  3. Receive and process orders.  
+  4. Analyze performance metrics on the dashboard.  
+  5. Respond to customer reviews.  
+- **Outcome**: The restaurant attracts customers, processes orders efficiently, and maintains a strong reputation.  
+
+---
+
+### **Use Case 3: Real-Time Delivery Management**  
+- **Actor**: Delivery Agent  
+- **Steps**:  
+  1. Accept an order assignment and view delivery details.  
+  2. Use integrated maps for optimized routing.  
+  3. Update delivery status in real time (picked up, on the way, delivered).  
+  4. Contact the customer if issues arise.  
+  5. Track earnings on the dashboard.  
+- **Outcome**: The agent delivers food efficiently and receives accurate earnings data.  
+
+---
+
+### **Use Case 4: Dispute Resolution**  
+- **Actor**: Admin  
+- **Steps**:  
+  1. Receive a complaint or refund request.  
+  2. Access relevant order details and logs.  
+  3. Resolve the issue and notify the user or restaurant.  
+  4. Update platform policies if recurring issues are identified.  
+- **Outcome**: The admin resolves disputes promptly, maintaining platform trust.  
 
 ---
 
@@ -160,18 +245,56 @@ The QA Team ensures the app’s reliability and performance by:
 
 ---
 
-## **5. Assumptions and Dependencies**
-- The app will rely on third-party services for map integration, payment processing, and notifications.
-- The project assumes that users will have access to smartphones and stable internet connections.
+
+## **5. User Interface Requirements**
+
+### **5.1 Search and Discovery**  
+- **Features**:  
+  - Prominent search bar with auto-suggestions.  
+  - Filters for cuisine, location, and ratings.  
+  - Infinite scroll or pagination for results.  
 
 ---
 
-## **6. Acceptance Criteria**
-- The app must pass all functional and non-functional tests.
-- User feedback during the beta testing phase must be addressed before the final release.
-- The app must meet all security and performance benchmarks outlined in this document.
+### **5.2 Restaurant Pages**  
+- **Features**:  
+  - Display restaurant details (photos, ratings, menu, hours).  
+  - Clear pricing and availability of dishes.  
+  - Buttons for adding items to the cart or viewing more details.  
 
 ---
 
-## **7. Conclusion**
+### **5.3 Cart and Checkout**  
+- **Features**:  
+  - Editable cart with clear item breakdowns.  
+  - Multiple payment methods and promo code application.  
+  - Order confirmation screen with tracking link.  
+
+---
+
+### **5.4 Delivery Tracking**  
+- **Features**:  
+  - Real-time map updates for order status.  
+  - Notifications for each status change (picked up, on the way, delivered).  
+
+---
+
+### **5.5 Admin Dashboard**  
+- **Features**:  
+  - Overview of platform metrics (orders, revenue, user activity).  
+  - Tools for resolving disputes and monitoring performance.  
+  - Exportable reports for analysis.  
+
+---
+
+### **5.6 Restaurant Partner Dashboard**  
+- **Features**:  
+  - Menu and pricing management.  
+  - Real-time order updates.  
+  - Sales performance graphs and metrics.  
+
+---
+
+
+## **6. Conclusion**
 This document defines the user requirements for the Zomato clone application. It serves as a guide for the development team to ensure that the final product meets the needs of the end-users and aligns with the project’s goals.
