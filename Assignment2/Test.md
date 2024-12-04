@@ -89,17 +89,51 @@
 ---
 
 ## 7. Test Cases
+
+# Feature: User Registration
+
+### *Scenario: User registers successfully*
+
+#### **Given:**
+- The user is on the registration page.
+
+#### **When:**
+- The user enters valid information (name, email, password).
+
+#### **Then:**
+- The user should be successfully registered.  
+- The user should be redirected to the login page.
+
+
+## **Chai.js Code**
+
+```javascript
+const chai = require('chai');
+const expect = chai.expect;
+const registrationPage = require('../pages/registrationPage');
+
+describe('User Registration', function() {
+  it('should register user successfully', function() {
+    registrationPage.open();
+    registrationPage.fillRegistrationForm('John Doe', 'john@example.com', 'password123');
+    registrationPage.submitForm();
+    expect(registrationPage.getSuccessMessage()).to.equal('Registration successful');
+    expect(browser.getUrl()).to.include('/login');
+  });
+});
+```
+
 # Feature: Customer Login
 
 ### *Scenario: Customer logs in with valid credentials*
 
-#### Given:
+#### **Given:**
 The customer is on the login page.
 
-#### When:
+#### **When:**
 The customer enters valid credentials (email, password).
 
-#### Then:
+#### **Then:**
 The customer should be successfully logged in.
 The customer should be redirected to the homepage.
 
@@ -128,7 +162,7 @@ describe('Customer Login', function() {
 
 # Feature: Restaurant Search
 
-### **Scenario: User searches for restaurants by location**
+### *Scenario: User searches for restaurants by location*
 
 #### **Given:**
 - The user is logged in and on the homepage.
@@ -163,17 +197,17 @@ describe('Restaurant Search', function() {
 });
 ```
 # Feature: View Menu
----
+
 
 ### *Scenario: User views the menu of a specific restaurant*
 
-#### *Given:*
+#### **Given:**
 - The user is logged in and on the restaurant’s page.
 
-#### *When:*
+#### **When:**
 - The user selects a restaurant and views the menu.
 
-#### *Then:*
+#### **Then:**
 - The user should see the list of menu items with their details.
 
 
@@ -203,23 +237,22 @@ restaurantPage.open();
 
 
 # Feature: Place Order
----
+
 
 ### *Scenario: User places an order*
 
-#### *Given:*
+#### **Given:**
 - The user is logged in and has selected items from the menu.
 
-#### *When:*
+#### **When:**
 - The user adds items to the cart and proceeds to checkout.
 
-#### *Then:*
+#### **Then:**
 - The order should be placed successfully.  
 - The user should see an order confirmation.
 
----
 
-## *Chai.js Code:*
+## Chai.js Code:
 
 ```javascript
 const chai = require('chai');
@@ -242,7 +275,73 @@ describe('Place Order', function() {
     expect(browser.getUrl()).to.include('/order-details');
   });
 });
-``
+```
+
+# Feature: Payment Processing
+
+
+### *Scenario: User completes a payment for the order*
+
+#### **Given:**
+- The user has added items to the cart and is on the checkout page.
+
+#### **When:**
+- The user enters valid payment details.
+
+#### **Then:**
+- The payment should be processed successfully.
+- The user should receive a payment confirmation.
+
+
+
+## **Chai.js Code**
+
+```javascript
+const chai = require('chai');
+const expect = chai.expect;
+const paymentPage = require('../pages/paymentPage');
+
+describe('Payment Processing', function() {
+  it('should process payment successfully', function() {
+    paymentPage.open();
+    paymentPage.enterPaymentDetails('4111111111111111', '12/24', '123');
+    paymentPage.submitPayment();
+    expect(paymentPage.getPaymentConfirmation()).to.equal('Payment successful');
+    expect(browser.getUrl()).to.include('/payment-confirmation');
+  });
+});
+```
+
+# Feature: Order Tracking
+
+### *Scenario: User checks the status of their order*
+
+#### **Given:**
+- The user has placed an order and is logged in.
+
+#### **When:**
+- The user navigates to the order status page.
+
+#### **Then:**
+- The user should see the current status of their order.
+
+## **Chai.js Code**
+
+```javascript
+const chai = require('chai');
+const expect = chai.expect;
+const orderStatusPage = require('../pages/orderStatusPage');
+
+describe('Order Tracking', function() {
+  it('should show the correct order status', function() {
+    orderStatusPage.open();
+    orderStatusPage.checkOrderStatus('order_123');
+    expect(orderStatusPage.getStatus()).to.equal('Order is being prepared');
+  });
+});
+```
+
+
 
 
 
