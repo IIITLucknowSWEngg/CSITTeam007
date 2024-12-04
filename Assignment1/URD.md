@@ -115,6 +115,24 @@ The Zomato clone will be a food delivery and restaurant discovery mobile applica
 - Must be able to view real-time data on active orders and deliveries.
 - Must be able to access order and payment history for all users.
 
+### **3.11 Development Team**
+The Development Team is responsible for designing, building, and implementing the app’s features. This includes:
+- Backend development for handling user data and orders.
+- Frontend development for the user interface.
+- Integration of third-party services like payment gateways and GPS tracking.
+
+### **3.12 UI/UX Designers**
+The UI/UX Designers are tasked with creating an intuitive and aesthetically pleasing user interface. Their responsibilities include:
+- Designing layouts and navigation flows.
+- Conducting user research to ensure the app meets user expectations.
+- Ensuring accessibility and responsiveness across all devices.
+
+### **3.13 Quality Assurance (QA) Team**
+The QA Team ensures the app’s reliability and performance by:
+- Performing various tests, including unit tests, integration tests, and user acceptance tests.
+- Identifying and resolving bugs or glitches.
+- Validating that the app meets all functional and non-functional requirements.
+
 ---
 
 ## **4. Non-Functional Requirements**
