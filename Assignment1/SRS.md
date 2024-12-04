@@ -185,21 +185,21 @@ Below are the diagrams representing the system's interactions and workflows.
 #### **Use Case Diagram**  
 The Use Case Diagram illustrates the main interactions between key actors (Customers, Restaurants, Delivery Partners, and Admins) and the system.  
 
-![Use Case Diagram](Happypath.jpg)
+![Use Case Diagram](https://github.com/IIITLucknowSWEngg/CSITTeam007/blob/main/Assignment2/HappyPath.jpg)
 
 ---
 
 #### **Abuse Case Diagram**  
 The Abuse Case Diagram identifies potential vulnerabilities in the system, such as fraudulent activities or unauthorized access attempts, and how they are mitigated.  
 
-![Abuse Case Diagram](AbuseCase.jpg)
+![Abuse Case Diagram](https://github.com/IIITLucknowSWEngg/CSITTeam007/blob/main/Assignment2/AbuseCase.jpg)
 
 ---
 
 #### **Error Case Diagram**  
 The Error Case Diagram highlights common error scenarios, such as payment failures or order cancellation issues, and describes how the system addresses these errors.  
 
-![Error Case Diagram](ErrorCase.jpg)
+![Error Case Diagram](https://github.com/IIITLucknowSWEngg/CSITTeam007/blob/main/Assignment2/ErrorCase.jpg)
 
 ---
 
