@@ -17,8 +17,9 @@ The Zomato clone application is a food delivery and restaurant discovery platfor
 
 ### **1.4 References**
 - IEEE Std 830-1998, IEEE Recommended Practice for Software Requirements Specifications  
-- SWEBOK v3.0, Software Engineering Body of Knowledge  
-- [User Requirements Document](link-to-urd-document)  
+- SWEBOK v3.0, Software Engineering Body of Knowledge
+- [Stakeholders.md](https://github.com/IIITLucknowSWEngg/CSITTeam007/blob/main/Assignment1/Stakeholder.md) 
+- [User Requirements Document](https://github.com/IIITLucknowSWEngg/CSITTeam007/blob/main/Assignment1/URD.md)  
 
 ### **1.5 Overview**
 This document is organized into several sections that describe the overall system, functional requirements, non-functional requirements, and other considerations relevant to the development and implementation of the Zomato clone application.
@@ -178,14 +179,31 @@ The application will operate on Android and iOS mobile platforms, as well as web
 - **NFR**: Non-Functional Requirements  
 
 ### **Appendix B: Diagrams**
-- **Use Case Diagram**  
-- **Abuse Case Diagram**  
-- **Error Case Diagram**
+
+Below are the diagrams representing the system's interactions and workflows.
+
+#### **Use Case Diagram**  
+The Use Case Diagram illustrates the main interactions between key actors (Customers, Restaurants, Delivery Partners, and Admins) and the system.  
+
+![Use Case Diagram](Happypath.jpg)
 
 ---
 
-![Use Case Diagram](use-case-diagram.png)
+#### **Abuse Case Diagram**  
+The Abuse Case Diagram identifies potential vulnerabilities in the system, such as fraudulent activities or unauthorized access attempts, and how they are mitigated.  
 
-![Abuse Case Diagram](abuse-case-diagram.png)
+![Abuse Case Diagram](AbuseCase.jpg)
 
-![Error Case Diagram](error-case-diagram.png)
+---
+
+#### **Error Case Diagram**  
+The Error Case Diagram highlights common error scenarios, such as payment failures or order cancellation issues, and describes how the system addresses these errors.  
+
+![Error Case Diagram](ErrorCase.jpg)
+
+---
+
+### **Appendix C: Cross Reference Matrix**
+
+The detailed Cross Reference Matrix is available in the following file:  
+[CrossReferenceMatrix.xlsx](CrossReferenceMatrix.xlsx)
