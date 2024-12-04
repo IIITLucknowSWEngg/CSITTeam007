@@ -65,3 +65,26 @@ The Zomato clone system enables users to request, order, and pay for food via a 
 ## API Design Diagram  
 ### Key Endpoints  
 ![api endpoints](https://github.com/user-attachments/assets/f4df1b2d-73c3-4476-9f02-9f217accbb8e)
+
+---
+
+## Non-Functional Requirements
+
+- **Scalability:** The app should handle a large number of concurrent users and orders.
+
+- **Performance:** The app should have low latency, with fast loading times and smooth interactions.
+
+- **Security:** User data, particularly payment information, must be securely handled and stored.
+
+- **Reliability:** The app should have high availability, with minimal downtime and robust error handling.
+
+- **Usability:** The app should be user-friendly, with an intuitive interface and easy navigation.
+
+- **Compliance:** The app must comply with relevant regulations (e.g., PCI-DSS for payment processing.
+
+---
+## Conclusion
+
+This Software Design Description outlines the architecture, modules, database, and interfaces for the Zomato-like food delivery system, ensuring the application is robust, scalable, and secure. The use of modular design and external system integration ensures that the system is capable of efficiently handling a large number of users, restaurants, and orders, while providing a seamless and reliable user experience.
+
+  
