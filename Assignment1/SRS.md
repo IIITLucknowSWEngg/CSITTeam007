@@ -1,81 +1,191 @@
-# Zomato System Requirements
+# **Software Requirements Specification (SRS) Document**
 
-## 1. Introduction
-The Zomato app provides users with a seamless platform for food discovery, ordering, and dining experiences. It serves as a connection between users and restaurants, offering features such as restaurant discovery, delivery, table reservations, and a subscription service (Zomato Pro). This document outlines the system requirements for Zomato's software.
+## **1. Introduction**
 
-## 2. Overview of the System
-The Zomato app will have the following components:
+### **1.1 Purpose**
+This Software Requirements Specification (SRS) document provides a comprehensive overview of the requirements for the Zomato clone application. It includes both functional and non-functional requirements, serving as a guideline for developers, testers, and stakeholders throughout the software development lifecycle.
 
-- **Mobile App**: Available on Android and iOS platforms for customers to browse restaurants, order food, reserve tables, and access exclusive deals.
-- **Backend Server**: Handles customer requests, processes orders, manages restaurant menus, tracks deliveries, and stores customer data securely.
+### **1.2 Scope**
+The Zomato clone application is a food delivery and restaurant discovery platform that enables users to order food and connect with restaurants and delivery personnel. The system will handle user registration, order management, payment processing, and real-time tracking. This SRS covers all aspects of the application, including user interfaces, functional and non-functional requirements, and external interface requirements.
 
-### Key Features of the System:
-- **Restaurant Discovery**: Users can explore restaurants based on ratings, reviews, cuisine, and proximity.
-- **Food Delivery and Takeaway**: Order meals for home delivery or schedule a takeaway.
-- **Table Reservations**: Book tables at partner restaurants for dining experiences.
-- **Zomato Pro**: Membership feature offering discounts and exclusive offers at select restaurants.
-- **Zomato Pay**: Integrated payment gateway for faster and more secure transactions with cashback offers.
-- **Ad Integration**: Restaurants can run promotional ads to reach more customers.
+### **1.3 Definitions, Acronyms, and Abbreviations**
+- **SRS**: Software Requirements Specification  
+- **NFR**: Non-Functional Requirement  
+- **UI**: User Interface  
+- **API**: Application Programming Interface  
+- **GPS**: Global Positioning System  
 
-## 3. Functional Requirements
+### **1.4 References**
+- IEEE Std 830-1998, IEEE Recommended Practice for Software Requirements Specifications  
+- SWEBOK v3.0, Software Engineering Body of Knowledge  
+- [User Requirements Document](link-to-urd-document)  
 
-### 3.1 User Registration and Authentication
-- **Sign Up and Login**: Users can register with their email, phone number, or social media accounts.
-- **Profile Management**: Users can update personal details like name, delivery address, and preferences.
+### **1.5 Overview**
+This document is organized into several sections that describe the overall system, functional requirements, non-functional requirements, and other considerations relevant to the development and implementation of the Zomato clone application.
 
-### 3.2 Restaurant Search and Discovery
-- **Filters and Sorting**: Search by cuisine, ratings, delivery time, location, and offers.
-- **Restaurant Information**: View restaurant profiles, menus, photos, reviews, and ratings.
-- **Favorite Lists**: Users can mark restaurants or dishes as favorites for future orders.
+---
 
-### 3.3 Food Ordering
-- **Browse Menus**: View restaurant menus and item details, including prices, availability, and descriptions.
-- **Add to Cart**: Users can select items, customize them, and add them to their cart.
-- **Place Orders**: Choose delivery or takeaway, and select a preferred delivery time.
-- **Order Status Tracking**: Real-time updates on the status of the order, from preparation to delivery.
+## **2. Overall Description**
 
-### 3.4 Payment Processing
-- **Payment Methods**: Supports multiple payment methods, including credit/debit cards, UPI, net banking, and digital wallets.
-- **Zomato Pay**: Integration with Zomato Pay for secure and fast transactions with cashback offers.
-- **Payment Confirmation**: Users receive payment confirmations and order summaries via notifications and emails.
+### **2.1 Product Perspective**
+The Zomato clone application is an independent system designed to operate on mobile devices and web platforms. It interfaces with external systems such as payment gateways, GPS services, and third-party APIs for map integration. The system will use a modular architecture to facilitate scalability and maintainability.
 
-### 3.5 Delivery Management
-- **Real-time Tracking**: Track the delivery status via GPS once the order is dispatched.
-- **Delivery Notifications**: Notifications for order confirmation, dispatch, and delivery status.
-- **Rider Information**: Details of the delivery person, including contact information.
+### **2.2 Product Functions**
+- User registration and authentication.  
+- Food and restaurant discovery.  
+- Order placement and tracking.  
+- Real-time delivery tracking.  
+- Payment processing and history tracking.  
+- Ratings and reviews system.  
 
-### 3.6 Ratings and Reviews
-- **Restaurant and Order Rating**: Users can rate restaurants and specific dishes after an order.
-- **Review System**: Detailed reviews with the ability to upload photos and provide feedback on the overall experience.
+### **2.3 User Classes and Characteristics**
+- **Customers**: Individuals using the app to browse and order food.  
+- **Delivery Partners**: Individuals using the app to fulfill delivery requests.  
+- **Restaurant Partners**: Businesses managing menus, orders, and availability.  
+- **Admins**: Individuals managing the platform, overseeing user and restaurant activities.
 
-### 3.7 Table Reservations
-- **Restaurant Booking**: Users can book tables at participating restaurants with confirmation and reminders.
-- **Reservation Management**: Modify or cancel reservations directly from the app.
+### **2.4 Operating Environment**
+The application will operate on Android and iOS mobile platforms, as well as web browsers. It will require internet connectivity for real-time functionalities like food ordering, payment processing, and GPS tracking. The backend will be hosted on cloud servers with high availability and reliability.
 
-### 3.8 Zomato Pro Membership
-- **Subscription Management**: Users can subscribe to Zomato Pro for exclusive deals.
-- **Member-Only Offers**: Access to discounts and complimentary offers at select restaurants.
+### **2.5 Design and Implementation Constraints**
+- Must comply with data protection regulations (e.g., GDPR).  
+- Limited by the performance and capabilities of mobile devices.  
+- Dependency on third-party services for payments and GPS tracking.  
 
-## 4. Non-Functional Requirements
+### **2.6 Assumptions and Dependencies**
+- Users have access to smartphones with stable internet connections.  
+- Integration with third-party services is stable and reliable.  
+- The application will initially support one currency and language.  
 
-### 4.1 Performance
-- **Response Time**: The system should respond to user actions (search, filter, and checkout) in under 2 seconds.
-- **Scalability**: The app must handle high traffic during peak hours, such as lunch and dinner times, without performance degradation.
+---
 
-### 4.2 Security
-- **Data Protection**: All user and restaurant data must be encrypted and securely stored.
-- **Payment Security**: Must comply with industry-standard encryption protocols for payment gateways (PCI DSS compliant).
+## **3. System Features**
 
-### 4.3 Usability
-- **User-Friendly Interface**: The app should have an intuitive and easy-to-navigate interface for all types of users.
-- **Cross-Platform Consistency**: Ensure consistency in the user experience across iOS, Android, and web versions of the app.
+### **3.1 User Registration and Authentication**
+**Description:** Users can register using email or phone numbers. The system supports secure login and password recovery.
 
-### 4.4 Availability
-- **Uptime**: The app should have an uptime of at least 99.9%, with redundancy systems in place to ensure availability even during server failures.
+**Functional Requirements:**  
+- The system shall allow users to register with an email or phone number.  
+- The system shall send a verification code to the user for account activation.  
+- The system shall support password recovery via email or SMS.  
 
-### 4.5 Compatibility
-- **Device Compatibility**: The app should support a wide range of devices and OS versions, especially on iOS (version 11 and up) and Android (version 5.0 and up).
+---
 
-## 5. Additional Considerations
-- **Third-Party Integrations**: Integration with third-party services for payment, location tracking, and promotional ads.
-- **Push Notifications**: Real-time notifications for order status, promotions, and updates on Zomato Pro.
+### **3.2 Food Browsing and Ordering**
+**Description:** Customers can browse restaurants and place orders. Restaurants manage their menu and availability.
+
+**Functional Requirements:**  
+- The system shall allow users to search for restaurants by cuisine, rating, or price range.  
+- The system shall enable users to add items to a cart and place an order.  
+- The system shall notify the restaurant of a new order.  
+- The system shall allow users to cancel orders before preparation starts.  
+
+---
+
+### **3.3 Payment Processing**
+**Description:** The system processes payments through various methods and records payment history.
+
+**Functional Requirements:**  
+- The system shall allow users to choose a payment method (credit/debit card, in-app wallet, or cash).  
+- The system shall automatically charge users after order placement.  
+- The system shall maintain a payment history for users, restaurants, and delivery partners.  
+
+---
+
+### **3.4 Real-Time Order Tracking**
+**Description:** Users can track the order status in real-time.
+
+**Functional Requirements:**  
+- The system shall display the order status (e.g., accepted, prepared, out for delivery).  
+- The system shall allow users to track the delivery partner’s location in real-time.  
+
+---
+
+### **3.5 Ratings and Reviews**
+**Description:** Customers can rate and review restaurants and delivery partners after each order.
+
+**Functional Requirements:**  
+- The system shall allow customers to leave ratings and reviews for restaurants and delivery partners.  
+- The system shall allow delivery partners and restaurants to view their ratings and reviews.  
+
+---
+
+## **4. External Interface Requirements**
+
+### **4.1 User Interfaces**
+- **Mobile Application**: Intuitive and responsive UI, optimized for different screen sizes.  
+- **Web Application**: Dashboard for admin and restaurant partners to manage operations.  
+
+---
+
+### **4.2 Hardware Interfaces**
+- **GPS Modules**: For tracking delivery partner locations.  
+- **Cameras**: For uploading profile pictures.  
+
+---
+
+### **4.3 Software Interfaces**
+- **Third-Party APIs**: Integration for payment processing, SMS notifications, and map services.  
+- **Database**: A NoSQL database (e.g., MongoDB) for storing user and order data.  
+
+---
+
+### **4.4 Communication Interfaces**
+- HTTPS for secure communication.  
+- WebSocket for real-time notifications.  
+
+---
+
+## **5. Non-Functional Requirements**
+
+### **5.1 Performance Requirements**
+- The application shall load within 2 seconds under normal conditions.  
+- The system shall handle up to 10,000 concurrent users without performance degradation.  
+
+---
+
+### **5.2 Security Requirements**
+- Data shall be encrypted in transit (TLS) and at rest (AES-256).  
+- The system shall enforce strong password policies and support multi-factor authentication.  
+
+---
+
+### **5.3 Availability and Reliability**
+- The system shall achieve 99.9% uptime.  
+- Data backups shall be performed daily.  
+
+---
+
+### **5.4 Scalability**
+- The system architecture shall support horizontal scaling.  
+
+---
+
+### **5.5 Usability**
+- The app shall follow WCAG 2.1 accessibility guidelines.  
+
+---
+
+## **6. Other Requirements**
+- **Localization**: Support for multiple languages and currencies.  
+
+---
+
+## **7. Appendices**
+
+### **Appendix A: Glossary of Terms**
+- **ETA**: Estimated Time of Arrival  
+- **NFR**: Non-Functional Requirements  
+
+### **Appendix B: Diagrams**
+- **Use Case Diagram**  
+- **Abuse Case Diagram**  
+- **Error Case Diagram**
+
+---
+
+![Use Case Diagram](use-case-diagram.png)
+
+![Abuse Case Diagram](abuse-case-diagram.png)
+
+![Error Case Diagram](error-case-diagram.png)
