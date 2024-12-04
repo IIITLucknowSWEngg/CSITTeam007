@@ -53,8 +53,7 @@ Services like Payment Gateways, CDNs, Map Services, Analytics, and Ad Networks s
   - Tracks delivery status and updates customers on the progress of their orders.
   - Coordinates with delivery partners for timely delivery.
   - Uses mapping services (e.g., Google Maps) for route optimization.
- 
-  - <img width="801" alt="Screenshot 2024-12-03 at 7 18 29 PM" src="https://github.com/IIITLucknowSWEngg/CSITTeam007/edit/main/Assignment2/DeployZomato.png">
+
 
 #### **Analytics Service**:
 - **Description**: Provides insights into user behavior to improve the platform.
@@ -134,7 +133,84 @@ Services like Payment Gateways, CDNs, Map Services, Analytics, and Ad Networks s
    - Helps in managing the state and notifications related to orders, including communicating with delivery partners to update them about new orders that need to be delivered.
 
 
+## 1.4 Deployment Diagram 🚀
+<img width="801" alt="Screenshot 2024-12-03 at 8 09 18 PM" src="https://github.com/user-attachments/assets/01935ac8-2b22-4d89-9b11-396ccc218828">
 
+
+### Customer Device
+- **Functionality**:
+  - Access the Zomato app or website.
+  - Browse restaurants, menus, and offers.
+  - Place orders and track deliveries.
+
+### Delivery Person Device
+- **Functionality**:
+  - Accept and manage order deliveries.
+  - Track delivery routes with GPS.
+  - Update delivery status in real-time.
+
+### Zomato Backend Server
+- **Functionality**:
+  - Process API requests and handle business logic.
+  - Authenticate users and manage database operations.
+  - Coordinate communication between customer and delivery modules.
+
+### Customer Service Component
+- **Functionality**:
+  - Manage customer queries and complaints.
+  - Enable customer feedback, reviews, and ratings.
+  - Integrate live chat for real-time assistance.
+
+### Order Processing Component
+- **Functionality**:
+  - Handle cart management, order placement, and checkout.
+  - Process payments (credit card, wallet, COD).
+  - Notify users of order confirmation and updates.
+
+### Driver Management Component
+- **Functionality**:
+  - Assign delivery partners based on location and availability.
+  - Track delivery progress and optimize routes.
+  - Update customer on real-time delivery status.
+
+### Restaurant Database Admin
+- **Functionality**:
+  - Maintain restaurant details and menu updates.
+  - Manage restaurant-side order processing.
+  - Provide analytics on restaurant performance and sales trends.
+
+### Payment Gateway Component
+- **Functionality**:
+  - Integrates with multiple payment providers like Razorpay, PayPal, and Stripe.
+  - Supports various payment methods: 
+    - Credit/Debit Cards
+    - Wallets
+    - UPI
+    - Net Banking
+  - Manages:
+    - Payment authorization and verification.
+    - Refunds and failed transaction handling.
+    - Sending payment confirmations to customers and Zomato backend.
+  - Ensures:
+    - PCI-DSS compliance for secure data handling.
+    - Encryption for sensitive information.
+
+### Frontend Component
+  - Provides an engaging and responsive user interface for customers, delivery partners, and restaurant admins.
+- **Functionality**:
+  - **Customer Interface**:
+    - Browse restaurants, menus, and offers.
+    - Place orders and track delivery in real-time.
+  - **Delivery Partner Interface**:
+    - View assigned orders and routes.
+    - Update delivery statuses (e.g., order picked, delivered).
+  - **Restaurant Admin Interface**:
+    - Manage menu details, order acceptance, and reports.
+  - **General Features**:
+    - Real-time updates via WebSockets or APIs.
+    - Cross-platform compatibility (Web, Android, iOS).
+    - Responsive design for all device types (mobile, tablet, desktop).
+    - Accessibility support for diverse user needs.
 
 
 
