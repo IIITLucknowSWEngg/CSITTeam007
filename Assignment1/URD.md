@@ -1,154 +1,159 @@
-# User Requirements Document (URD) for Zomato-like Platform
+# **User Requirements Document (URD)**
 
-## 1. Introduction
-### 1.1 Purpose of the Document
-This User Requirements Document (URD) outlines the high-level requirements for the Zomato-like food delivery and restaurant discovery platform. The document is intended for the project’s stakeholders, including end-users (customers), restaurant owners, delivery partners, development teams, and marketing representatives. It aims to describe the platform's goals, system context, features, and constraints, ensuring alignment between stakeholders.
+## **1. Introduction**
 
-### 1.2 Scope of the System
-The system will provide an interactive environment where users can search for restaurants, order food, and get it delivered. It will focus on offering seamless restaurant discovery and food ordering through a user-friendly interface. The primary user groups include customers, restaurant owners, and delivery partners.
+### **1.1 Purpose**
+This document outlines the user requirements for the Zomato clone application. It is intended to guide the design, development, and testing of the application to ensure that it meets the needs of its users, including customers, delivery personnel, and restaurant partners.
 
-### 1.3 Definitions, Acronyms, and Abbreviations
-- **Delivery Partner**: Individuals responsible for delivering orders to customers.
-- **Restaurant Owner**: Businesses providing food services listed on the platform.
-- **ETA**: Estimated Time of Arrival.
+### **1.2 Scope**
+The Zomato clone will be a food delivery and restaurant discovery mobile application that connects customers with restaurants and delivery personnel. The app will support searching for restaurants, ordering food, real-time tracking, payment processing, and communication between customers, restaurants, and delivery personnel.
 
-### 1.4 Overview of the Document
-This document contains system objectives, context, functional and non-functional requirements, usage scenarios, conceptual models, risks, and assumptions to ensure that the platform aligns with user needs and business goals.
+### **1.3 Definitions, Acronyms, and Abbreviations**
+- **Customer/User**: An individual who uses the app to browse, order food, or explore restaurants.
+- **Delivery Partner**: An individual who delivers orders to customers.
+- **Restaurant Partner**: A restaurant or food service business offering food for delivery or dine-in.
+- **Admin**: The entity responsible for managing and overseeing the app’s operations.
 
-## 2. System Overview
-### 2.1 General Description
-The Zomato-like platform is a mobile and web-based application that helps users discover restaurants and order food. It leverages an intuitive interface, real-time tracking, and user reviews to provide a convenient and reliable food ordering experience.
+### **1.4 References**
+- [Stakeholders.md](https://github.com/IIITLucknowSWEngg/CSITTeam007/blob/main/Assignment1/Stakeholder.md)
+- [Project.md](https://github.com/IIITLucknowSWEngg/CSITTeam007/blob/main/Assignment1/Project.md)
 
-### 2.2 Background and Motivation
-The growing demand for convenient food delivery services necessitates a platform that bridges the gap between customers and restaurants. This platform aims to provide a streamlined food ordering experience while supporting local businesses and delivery partners.
+---
 
-### 2.3 Target Audience
-The system is designed for:
-- **Customers**: Individuals looking to order food from local restaurants.
-- **Restaurant Owners**: Businesses that want to reach a broader audience by listing their menu on the platform.
-- **Delivery Partners**: Individuals who want to earn by delivering orders.
+## **2. User Characteristics**
 
-## 3. System Objectives
-### 3.1 Goals
-- Provide a seamless food ordering experience for customers.
-- Enable restaurants to manage their menu and orders efficiently.
-- Offer real-time tracking for customers and delivery partners.
-- Enhance user engagement through reviews, ratings, and rewards.
+### **2.1 Customers**
+- Smartphone users familiar with app-based food ordering and navigation.
+- Expect seamless browsing, personalized recommendations, and real-time updates on orders.
 
-### 3.2 Success Criteria
-- **Order Completion Rate**: At least 90% of orders should be successfully completed.
-- **User Satisfaction**: Measured via feedback, surveys, and app store ratings (4.5+).
-- **Delivery Time**: Maintain an average delivery time of less than 30 minutes.
+### **2.2 Delivery Partners**
+- Smartphone users who need clear, easy-to-follow instructions for accepting and delivering orders.
+- Require straightforward interfaces for managing deliveries and earnings.
 
-## 4. System Context
-### 4.1 System Environment
-The platform will be deployed as a cloud-based solution with web and mobile applications. It will interface with the following external systems:
-- **Payment Gateways**: For processing payments securely.
-- **GPS Services**: For real-time tracking of delivery.
-- **Social Media Platforms**: For user login and sharing reviews.
+### **2.3 Restaurant Partners**
+- Businesses managing menus, prices, and order processing.
+- Require simple tools to update menu details, manage availability, and track sales.
 
-### 4.2 Stakeholders
-- **Customers**: People looking to order food.
-- **Restaurant Owners**: Businesses listing their menu on the platform.
-- **Delivery Partners**: Individuals delivering food to customers.
-- **Marketing Teams**: Responsible for promoting the platform.
+---
 
-### 4.3 System Boundaries
-- **Inside Scope**: Food ordering, delivery tracking, restaurant discovery.
-- **Outside Scope**: In-restaurant dining, non-food related services.
+## **3. Functional Requirements**
 
-## 5. High-Level Functional Requirements
-### 5.1 User Stories / Use Cases
-- **UC1**: As a customer, I want to search for restaurants near me so that I can order food.
-- **UC2**: As a customer, I want to track my order in real-time so that I know when it will arrive.
-- **UC3**: As a restaurant owner, I want to update my menu and prices.
-- **UC4**: As a delivery partner, I want to accept delivery requests and navigate to the customer's location.
-- **UC5**: As a customer, I want to leave a review for my order.
+### **3.1 User Registration and Login**
+**Customers, Delivery Partners, and Restaurant Partners:**
+- Must be able to register using an email address or phone number.
+- Must be able to log in using their credentials.
+- Password reset functionality should be available.
 
-### 5.2 System Features
-- **Restaurant Discovery**: Search and filter restaurants based on location, cuisine, and ratings.
-- **Order Management**: Customers can place, modify, and cancel orders.
-- **Real-Time Tracking**: Track the delivery process in real-time.
-- **Review and Ratings**: Allow customers to review and rate restaurants and delivery partners.
-- **Payment Processing**: Support various payment methods including credit/debit cards, wallets, and cash on delivery.
+### **3.2 User Profiles**
+**Customers:**
+- Must be able to create and edit their profile, including contact information and payment methods.
+- Must be able to view their order history and saved restaurants.
 
-### 5.3 Domain Entities
-- **User**: Represents the customer.
-- **Order**: A customer's food order.
-- **Restaurant**: A business providing food services.
-- **Delivery**: The process of transporting the order to the customer.
+**Delivery Partners:**
+- Must be able to create and edit their profile, including vehicle information and delivery preferences.
+- Must be able to view their delivery history and earnings.
 
-## 6. Non-functional Requirements
+**Restaurant Partners:**
+- Must be able to manage their profiles, including menu details, operating hours, and location.
+- Must be able to view order history and sales reports.
 
-### 6.1 Performance Requirements
-- The system must support **500,000 concurrent users**.
-- The response time for **search queries** should be less than **2 seconds**.
+### **3.3 Food Browsing and Ordering**
+**Customers:**
+- Must be able to search for restaurants and dishes using filters like cuisine, rating, and price range.
+- Must be able to add items to the cart and place an order.
+- Must receive notifications for order confirmation, preparation, and delivery status.
+- Must be able to cancel orders before preparation begins.
 
-### 6.2 Security Requirements
-- User data must be **encrypted using AES-256**.
-- Support **two-factor authentication (2FA)** for user login.
-- Ensure **PCI-DSS compliance** for payment processing.
+### **3.4 Order Fulfillment**
+**Delivery Partners:**
+- Must receive order pickup and drop-off details.
+- Must be able to accept or decline delivery requests.
+- Must use in-app navigation for reaching restaurants and customers.
+- Must receive notifications for order cancellations or updates.
 
-### 6.3 Usability Requirements
-- The mobile application must adhere to platform-specific **UI/UX guidelines for iOS and Android**.
-- Provide **accessibility options**, such as support for screen readers.
+**Restaurant Partners:**
+- Must be able to view incoming orders and mark them as accepted, prepared, or completed.
+- Must be able to update item availability in real-time.
 
-### 6.4 Reliability and Availability
-- Ensure **99.9% uptime** for the cloud service.
-- Implement **backup and disaster recovery solutions** to prevent data loss.
+### **3.5 Payment Processing**
+**Customers:**
+- Must be able to choose from multiple payment methods (credit/debit card, in-app wallet, or cash).
+- Must receive payment confirmation after placing an order.
+- Must be able to view payment history.
 
-### 6.5 Compliance Requirements
-- The platform must adhere to **local regulations** regarding food safety and delivery services.
-- Ensure that **user content (reviews)** complies with local laws.
+**Delivery and Restaurant Partners:**
+- Must be able to track earnings from completed orders.
+- Must receive payments directly to their chosen payout methods.
 
-## 7. System Constraints
+### **3.6 Ratings and Reviews**
+**Customers:**
+- Must be able to rate and review restaurants and delivery partners after each order.
 
-### 7.1 Assumptions
-- Users will primarily access the platform via **smartphones**.
-- The **internet** is available to all users, and order placement requires an **active connection**.
+**Delivery Partners and Restaurants:**
+- Must be able to view their ratings and reviews for performance evaluation.
 
-### 7.2 Design Constraints
-- The system must use existing **third-party APIs** for payment processing and GPS tracking.
-- The mobile app must not exceed **150 MB** for fast download and installation.
+### **3.7 Communication**
+**Customers, Delivery Partners, and Restaurants:**
+- Must be able to communicate via in-app chat or call for coordination.
+- Notifications should be sent for messages received.
 
-### 7.3 Hardware/Software Constraints
-- The platform should be compatible with **web browsers** (Chrome, Firefox, Safari) and **iOS/Android devices**.
+### **3.8 Real-Time Tracking**
+**Customers:**
+- Must be able to track the delivery partner’s location in real-time after placing an order.
 
-## 8. Usage Scenarios
+**Delivery Partners:**
+- Must be able to view the restaurant’s and customer’s locations for pickups and deliveries.
 
-### 8.1 User Workflow
-- A customer logs into the platform using **social media credentials**.
-- They **search for nearby restaurants** and browse the menu.
-- The customer **places an order** and makes a **payment**.
-- They **track the order in real-time** and receive notifications about the **delivery status**.
+### **3.9 Customer Support**
+**All Users:**
+- Must be able to access customer support through the app.
+- FAQs and help sections should be easily accessible.
 
-### 8.2 Business Processes
-- The platform will offer both **free and premium features**, such as **priority delivery** for premium users.
+### **3.10 Admin Panel**
+**Admins:**
+- Must be able to manage users (approve, suspend, or delete accounts).
+- Must be able to view real-time data on active orders and deliveries.
+- Must be able to access order and payment history for all users.
 
-## 9. Conceptual Models
+---
 
-### 9.1 System Context Diagram
-- The system context diagram shows how the food delivery platform interacts with external systems like **payment gateways**, **GPS services**, and **social media platforms**.
+## **4. Non-Functional Requirements**
 
-### 9.2 High-Level Architecture Diagram
-- The architecture diagram will illustrate the platform’s primary components, including the **web and mobile front-end**, **back-end services**, **databases**, and **third-party integrations**.
+### **4.1 Performance**
+- The app must load within 2 seconds under normal network conditions.
+- Order updates and notifications must be processed in real-time.
 
-## 10. Risks and Assumptions
+### **4.2 Security**
+- User data must be encrypted in transit and at rest.
+- The app must comply with data protection regulations (e.g., GDPR).
+- User authentication must be secure, with options for multi-factor authentication.
 
-### 10.1 Risk Factors
-- *Technical Risks*: Difficulty in integrating third-party **APIs for GPS tracking** and **payment processing**.
-- *Market Risks*: Competitors like **Swiggy or Uber Eats** could introduce similar features, affecting **user retention**.
+### **4.3 Usability**
+- The app must be intuitive and easy to navigate for all user types.
+- The UI must be responsive and accessible on devices with various screen sizes.
 
-### 10.2 Mitigation Strategies
-- Maintain flexibility in the **back-end system** for easy integration with newer APIs.
-- Continuously gather **feedback from users** to improve and introduce **innovative features**.
+### **4.4 Reliability**
+- The app must be available 99.9% of the time, with minimal downtime.
+- Backup systems should ensure data is not lost in case of server failure.
 
-## 11. Glossary of Terms
-- **ETA**: Estimated Time of Arrival.
-- **Delivery Partner**: Individuals responsible for delivering orders to customers.
+### **4.5 Scalability**
+- The app must be able to handle a growing number of users without degradation in performance.
+- The backend should support the addition of new features without significant rework.
 
-## 12. Appendices
-- Additional **diagrams** for system architecture.
-- **Legal documentation** for PCI-DSS compliance.
+---
 
+## **5. Assumptions and Dependencies**
+- The app will rely on third-party services for map integration, payment processing, and notifications.
+- The project assumes that users will have access to smartphones and stable internet connections.
 
+---
+
+## **6. Acceptance Criteria**
+- The app must pass all functional and non-functional tests.
+- User feedback during the beta testing phase must be addressed before the final release.
+- The app must meet all security and performance benchmarks outlined in this document.
+
+---
+
+## **7. Conclusion**
+This document defines the user requirements for the Zomato clone application. It serves as a guide for the development team to ensure that the final product meets the needs of the end-users and aligns with the project’s goals.
