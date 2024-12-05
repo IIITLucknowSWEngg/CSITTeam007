@@ -206,4 +206,4 @@ The Error Case Diagram highlights common error scenarios, such as payment failur
 ### **Appendix C: Cross Reference Matrix**
 
 The detailed Cross Reference Matrix is available in the following file : 
-[CrossReferenceMatrix.md](CrossReferenceMatrix.md)
+[CrossReferenceMatrix.md](https://github.com/IIITLucknowSWEngg/CSITTeam007/blob/main/Assignment2/CrossReferenceMatrix.md)
