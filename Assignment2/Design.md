@@ -117,6 +117,33 @@ The backend consists of several services that manage business logic, data proces
 
 ---
 
+## API Design  
+
+### Overview  
+APIs facilitate communication between the frontend, backend, and third-party services. They are organized around REST principles for simplicity and consistency.  
+
+### Key Endpoints  
+1. **Authentication Service:**  
+   - `POST /api/login` - User authentication.  
+   - `POST /api/register` - User registration.  
+
+2. **Restaurant Management:**  
+   - `GET /api/restaurants` - Fetch a list of restaurants.  
+   - `POST /api/restaurants` - Add a new restaurant.  
+
+3. **Order Management:**  
+   - `POST /api/orders` - Create a new order.  
+   - `GET /api/orders/:id` - Get order details.  
+
+4. **Payment Service:**  
+   - `POST /api/payment` - Initiate a payment.  
+   - `GET /api/payment/status` - Check payment status.  
+
+### API Design Diagram  
+![API Design UML](https://github.com/user-attachments/assets/f4df1b2d-73c3-4476-9f02-9f217accbb8e)
+
+---
+
 ## Non-Functional Requirements  
 
 - **Scalability:** The app should handle a large number of concurrent users and orders.  
@@ -124,6 +151,7 @@ The backend consists of several services that manage business logic, data proces
 - **Security:** User data, particularly payment information, must be securely handled and stored.  
 - **Reliability:** The app should have high availability, with minimal downtime and robust error handling.  
 - **Usability:** The app should be user-friendly, with an intuitive interface and easy navigation.  
+- **Compliance:** The app must comply with relevant regulations (e.g., PCI-DSS for payment processing).  
 
 ---
 
