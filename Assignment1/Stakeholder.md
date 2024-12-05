@@ -28,3 +28,16 @@ Restaurants Owner Feedback:
 https://drive.google.com/file/d/1yhskB1EULAzTymH5hpKFZdQ0R1Qh_oqu/view?usp=drive_link
 
 Since the video is too large to Upload I have Uploaded The drive Link of the video
+
+Rider Feedback
+ 
+   
+
+https://github.com/user-attachments/assets/dd2f530a-ea17-48bb-86ea-ac9587116754
+
+
+</video>
+
+
+
+  
