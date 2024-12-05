@@ -124,7 +124,6 @@ The backend consists of several services that manage business logic, data proces
 - **Security:** User data, particularly payment information, must be securely handled and stored.  
 - **Reliability:** The app should have high availability, with minimal downtime and robust error handling.  
 - **Usability:** The app should be user-friendly, with an intuitive interface and easy navigation.  
-- **Compliance:** The app must comply with relevant regulations (e.g., PCI-DSS for payment processing).  
 
 ---
 
