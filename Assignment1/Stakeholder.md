@@ -19,7 +19,9 @@ This document outlines the key stakeholders involved in Zomato. Stakeholders inc
 | **Legal and Compliance Team**    | Ensure Zomato follows legal standards and regulations                 | Ensuring compliance with local regulations, data privacy laws, and contracts with partners                       | Medium - Ensures legal compliance, mitigating risks                          |
 | **Marketing Team**               | Drive customer acquisition and engagement                            | Developing promotional strategies; Managing partnerships and customer outreach programs                         | Medium - Impacts user growth, brand visibility, and market presence           |
 
+User feedback
 
+https://drive.google.com/file/d/1fa7HFRF-MlTVNMkUda5Am_-kEFLLbC66/view?usp=sharing
 
 Restaurants Owner Feedback:
 
