@@ -3,11 +3,11 @@ TEAM NAME : Agile Engineers
 
 PROJECT IDEA : Zomato Clone
 
+---
 ## **Github Issue**  
 **[Record of Approval](https://github.com/IIITLucknowSWEngg/Assignment/issues/16)**
 
 ---
-
 TEAM MEMBERS :
 
 | NAME | ROLL NUMBER | BRANCH | EMAIL ID | GITHUB ID |
