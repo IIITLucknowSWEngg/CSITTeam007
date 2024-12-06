@@ -26,37 +26,7 @@ This document is organized into several sections that describe the overall syste
 
 ---
 
-## **2. Overall Description**
 
-### **2.1 Product Perspective**
-The Zomato clone application is an independent system designed to operate on mobile devices and web platforms. It interfaces with external systems such as payment gateways, GPS services, and third-party APIs for map integration. The system will use a modular architecture to facilitate scalability and maintainability.
-
-### **2.2 Product Functions**
-- User registration and authentication.  
-- Food and restaurant discovery.  
-- Order placement and tracking.  
-- Real-time delivery tracking.  
-- Payment processing and history tracking.  
-- Ratings and reviews system.  
-
-### **2.3 User Classes and Characteristics**
-- **Customers**: Individuals using the app to browse and order food.  
-- **Delivery Partners**: Individuals using the app to fulfill delivery requests.  
-- **Restaurant Partners**: Businesses managing menus, orders, and availability.  
-- **Admins**: Individuals managing the platform, overseeing user and restaurant activities.
-
-### **2.4 Operating Environment**
-The application will operate on Android and iOS mobile platforms, as well as web browsers. It will require internet connectivity for real-time functionalities like food ordering, payment processing, and GPS tracking. The backend will be hosted on cloud servers with high availability and reliability.
-
-### **2.5 Design and Implementation Constraints**
-- Must comply with data protection regulations (e.g., GDPR).  
-- Limited by the performance and capabilities of mobile devices.  
-- Dependency on third-party services for payments and GPS tracking.  
-
-### **2.6 Assumptions and Dependencies**
-- Users have access to smartphones with stable internet connections.  
-- Integration with third-party services is stable and reliable.  
-- The application will initially support one currency and language.  
 
 ---
 
@@ -206,4 +176,4 @@ The Error Case Diagram highlights common error scenarios, such as payment failur
 ### **Appendix C: Cross Reference Matrix**
 
 The detailed Cross Reference Matrix is available in the following file : 
-[CrossReferenceMatrix.md](https://github.com/IIITLucknowSWEngg/CSITTeam007/blob/main/Assignment2/CrossReferenceMatrix.md)
+[CrossReferenceMatrix.md](https://github.com/IIITLucknowSWEngg/CSITTeam007/blob/main/Assignment2/CrossReferenceMatrix.md)    
