@@ -12,7 +12,6 @@ This document outlines the user requirements for **Zomato**, a food discovery an
 2. [Use Cases](#2-use-cases)  
 3. [Functional Requirements](#3-functional-requirements)  
 4. [Non-Functional Requirements](#4-non-functional-requirements)  
-5. [User Interface Requirements](#5-user-interface-requirements)  
 
 ---
 
