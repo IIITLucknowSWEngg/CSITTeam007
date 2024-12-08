@@ -1,4 +1,4 @@
-# Project Scope for Zomato Clone
+# Project Scope for Zomato
 
 ## Included Features:
 
