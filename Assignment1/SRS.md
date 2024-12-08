@@ -113,9 +113,55 @@ The application will operate on Android and iOS mobile platforms, as well as web
 
 ## **4. External Interface Requirements**
 
-### **4.1 User Interfaces**
+### **4.1 User Interface Requirements**
 - **Mobile Application**: Intuitive and responsive UI, optimized for different screen sizes.  
-- **Web Application**: Dashboard for admin and restaurant partners to manage operations.  
+- **Web Application**: Dashboard for admin and restaurant partners to manage operations.
+
+
+### **4.1.1 Search and Discovery**  
+- **Features**:  
+  - Prominent search bar with auto-suggestions.  
+  - Filters for cuisine, location, and ratings.  
+  - Infinite scroll or pagination for results.  
+
+---
+
+### **4.1.2 Restaurant Pages**  
+- **Features**:  
+  - Display restaurant details (photos, ratings, menu, hours).  
+  - Clear pricing and availability of dishes.  
+  - Buttons for adding items to the cart or viewing more details.  
+
+---
+
+### **4.1.3 Cart and Checkout**  
+- **Features**:  
+  - Editable cart with clear item breakdowns.  
+  - Multiple payment methods and promo code application.  
+  - Order confirmation screen with tracking link.  
+
+---
+
+### **4.1.4 Delivery Tracking**  
+- **Features**:  
+  - Real-time map updates for order status.  
+  - Notifications for each status change (picked up, on the way, delivered).  
+
+---
+
+### **4.1.5 Admin Dashboard**  
+- **Features**:  
+  - Overview of platform metrics (orders, revenue, user activity).  
+  - Tools for resolving disputes and monitoring performance.  
+  - Exportable reports for analysis.  
+
+---
+
+### **4.1.6 Restaurant Partner Dashboard**  
+- **Features**:  
+  - Menu and pricing management.  
+  - Real-time order updates.  
+  - Sales performance graphs and metrics.  
 
 ---
 
@@ -136,6 +182,7 @@ The application will operate on Android and iOS mobile platforms, as well as web
 - WebSocket for real-time notifications.  
 
 ---
+
 
 ## **5. Non-Functional Requirements**
 
