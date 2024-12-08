@@ -227,4 +227,4 @@ This document outlines the user requirements for **Zomato**, a food discovery an
 ---
 
 ## **5. Conclusion**
-This document defines the user requirements for the Zomato clone application. It serves as a guide for the development team to ensure that the final product meets the needs of the end-users and aligns with the project’s goals.
+This document defines the user requirements for the Zomato application. It serves as a guide for the development team to ensure that the final product meets the needs of the end-users and aligns with the project’s goals.
