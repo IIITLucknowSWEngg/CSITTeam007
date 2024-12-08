@@ -1,4 +1,4 @@
-# **User Requirements Document (URD) for Zomato Clone**
+# **User Requirements Document (URD) for Zomato**
 
 ## **Overview**
 
