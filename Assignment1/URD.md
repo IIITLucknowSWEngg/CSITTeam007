@@ -32,13 +32,13 @@ This document outlines the user requirements for **Zomato**, a food discovery an
 ---
 
 ### **User 2: Restaurant Partner**  
-- **Scenario**: I own a restaurant and want to attract more customers while managing orders effectively.  
+- **Scenario**: I own a restaurant and want to attract more Diners while managing orders effectively.  
 - **Goals**:
   1. Register my restaurant with detailed information (menu, pricing, and photos).  
   2. Receive and process orders seamlessly.  
   3. Update menu items and pricing dynamically.  
   4. Monitor sales performance and revenue trends.  
-  5. Respond to customer reviews to maintain a positive image.  
+  5. Respond to Diner reviews to maintain a positive image.  
 - **Pain Points**:  
   - Difficulty in updating menu details quickly.  
   - Poor visibility into sales metrics and customer preferences.  
@@ -50,7 +50,7 @@ This document outlines the user requirements for **Zomato**, a food discovery an
 - **Goals**:
   1. Receive order details and delivery locations promptly.  
   2. Use integrated maps for optimized navigation.  
-  3. Communicate with customers in case of delays or issues.  
+  3. Communicate with diners in case of delays or issues.  
   4. Track earnings and delivery metrics on my dashboard.  
 - **Pain Points**:  
   - Inefficient routing leading to delays.  
@@ -59,7 +59,7 @@ This document outlines the user requirements for **Zomato**, a food discovery an
 ---
 
 ### **User 4: Admin**  
-- **Scenario**: I oversee platform operations and ensure smooth interactions between users, restaurants, and delivery agents.  
+- **Scenario**: I oversee platform operations and ensure smooth interactions between diners, restaurants, and delivery agents.  
 - **Goals**:
   1. Monitor platform performance and resolve disputes.  
   2. Approve or reject restaurant listings.  
@@ -74,14 +74,14 @@ This document outlines the user requirements for **Zomato**, a food discovery an
 ## **2. Use Cases**
 
 ### **Use Case 1: Food Discovery and Ordering**  
-- **Actor**: End User  
+- **Actor**: Diner  
 - **Steps**:  
   1. Search for restaurants by location, cuisine, or rating.  
   2. View restaurant details and select items from the menu.  
   3. Add items to the cart and proceed to checkout.  
   4. Apply promo codes and make payment using preferred methods.  
   5. Track the order in real time and receive the delivery.  
-- **Outcome**: The user successfully orders food and enjoys a seamless experience.  
+- **Outcome**: The diner successfully orders food and enjoys a seamless experience.  
 
 ---
 
@@ -92,8 +92,8 @@ This document outlines the user requirements for **Zomato**, a food discovery an
   2. Update menu items and availability as needed.  
   3. Receive and process orders.  
   4. Analyze performance metrics on the dashboard.  
-  5. Respond to customer reviews.  
-- **Outcome**: The restaurant attracts customers, processes orders efficiently, and maintains a strong reputation.  
+  5. Respond to diner reviews.  
+- **Outcome**: The restaurant attracts diners, processes orders efficiently, and maintains a strong reputation.  
 
 ---
 
@@ -103,7 +103,7 @@ This document outlines the user requirements for **Zomato**, a food discovery an
   1. Accept an order assignment and view delivery details.  
   2. Use integrated maps for optimized routing.  
   3. Update delivery status in real time (picked up, on the way, delivered).  
-  4. Contact the customer if issues arise.  
+  4. Contact the diner if issues arise.  
   5. Track earnings on the dashboard.  
 - **Outcome**: The agent delivers food efficiently and receives accurate earnings data.  
 
@@ -120,7 +120,7 @@ This document outlines the user requirements for **Zomato**, a food discovery an
 
 ---
 
-## **3. Functional Requirements**
+## **3. User Required Features**
 
 ### **3.1 User Registration and Login**
 **Customers, Delivery Partners, and Restaurant Partners:**
@@ -177,7 +177,7 @@ This document outlines the user requirements for **Zomato**, a food discovery an
 - Must be able to view their ratings and reviews for performance evaluation.
 
 ### **3.7 Communication**
-**Customers, Delivery Partners, and Restaurants:**
+**Diners, Delivery Partners, and Restaurants:**
 - Must be able to communicate via in-app chat or call for coordination.
 - Notifications should be sent for messages received.
 
