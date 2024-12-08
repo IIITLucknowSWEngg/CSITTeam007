@@ -6,7 +6,7 @@
 This project intends to deliver a seamless food-ordering and delivery experience for users while supporting restaurants and delivery agents with robust tools to optimize operations.
 
 ### Scope  
-The Zomato clone system enables users to request, order, and pay for food via a mobile app and web app. Restaurants are able to offer services through the same platform. The system includes:  
+The Zomato system enables users to request, order, and pay for food via a mobile app and web app. Restaurants are able to offer services through the same platform. The system includes:  
 - Mobile application and web application interfaces.  
 - Backend API services.  
 - Payment processing integration.  
