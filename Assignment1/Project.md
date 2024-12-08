@@ -62,34 +62,34 @@
 - Native mobile applications for Android and iOS.
 - Synchronization of user data across platforms.
 
+### 13. Delivery Partner Integration:
+- Delivery partner registration and login.
+- Delivery partner profile management, including personal information and delivery history.
+- Real-time order assignment and delivery tracking.
+- Route optimization and navigation support.
+- Push notifications for new delivery assignments, order status updates, and delivery completion.
+- Earnings tracking and history for delivery partners.
+- In-app customer support chat and help center for delivery partners.
+
 ## Excluded Features:
 
-### 1. Live Order Tracking:
-- No implementation of live GPS tracking for delivery personnel.
-
-### 2. Advanced AI-Based Recommendations:
+### 1. Advanced AI-Based Recommendations:
 - No advanced AI/ML-based algorithms for deeply personalized restaurant recommendations.
 
-### 3. Content Rights Management:
+### 2. Content Rights Management:
 - No tools for handling content copyright claims or violations.
 
-### 4. Advanced Analytics:
+### 3. Advanced Analytics:
 - No advanced analytics on user behavior or order performance (e.g., detailed heatmaps).
 
-### 5. Multi-Language Interface:
+### 4. Multi-Language Interface:
 - Focus on a single language for the user interface (e.g., English).
 
-### 6. Social Media Integration:
+### 5. Social Media Integration:
 - No direct integration for sharing restaurant reviews or orders on social media platforms.
 
-### 7. In-App Video Content:
+### 6. In-App Video Content:
 - No support for uploading or viewing video content within the app.
 
-### 8. Premium Subscription Model:
-- No in-app purchasing or subscription model (e.g., Zomato Gold).
-
-### 9. Complex Reservation System:
+### 7. Complex Reservation System:
 - No support for advanced table reservation features like dynamic availability and instant booking confirmation.
-
-### 10. Third-Party Integrations:
-- No integration with third-party services like ride-sharing apps or external loyalty programs.
