@@ -3,10 +3,10 @@
 ## **1. Introduction**
 
 ### **1.1 Purpose**
-This Software Requirements Specification (SRS) document provides a comprehensive overview of the requirements for the Zomato clone application. It includes both functional and non-functional requirements, serving as a guideline for developers, testers, and stakeholders throughout the software development lifecycle.
+This Software Requirements Specification (SRS) document provides a comprehensive overview of the requirements for the Zomato application. It includes both functional and non-functional requirements, serving as a guideline for developers, testers, and stakeholders throughout the software development lifecycle.
 
 ### **1.2 Scope**
-The Zomato clone application is a food delivery and restaurant discovery platform that enables users to order food and connect with restaurants and delivery personnel. The system will handle user registration, order management, payment processing, and real-time tracking. This SRS covers all aspects of the application, including user interfaces, functional and non-functional requirements, and external interface requirements.
+The Zomato application is a food delivery and restaurant discovery platform that enables users to order food and connect with restaurants and delivery personnel. The system will handle user registration, order management, payment processing, and real-time tracking. This SRS covers all aspects of the application, including user interfaces, functional and non-functional requirements, and external interface requirements.
 
 ### **1.3 Definitions, Acronyms, and Abbreviations**
 - **SRS**: Software Requirements Specification  
@@ -22,14 +22,14 @@ The Zomato clone application is a food delivery and restaurant discovery platfor
 - [User Requirements Document](https://github.com/IIITLucknowSWEngg/CSITTeam007/blob/main/Assignment1/URD.md)  
 
 ### **1.5 Overview**
-This document is organized into several sections that describe the overall system, functional requirements, non-functional requirements, and other considerations relevant to the development and implementation of the Zomato clone application.
+This document is organized into several sections that describe the overall system, functional requirements, non-functional requirements, and other considerations relevant to the development and implementation of the Zomato application.
 
 ---
 
 ## **2. Overall Description**
 
 ### **2.1 Product Perspective**
-The Zomato clone application is an independent system designed to operate on mobile devices and web platforms. It interfaces with external systems such as payment gateways, GPS services, and third-party APIs for map integration. The system will use a modular architecture to facilitate scalability and maintainability.
+The Zomato application is an independent system designed to operate on mobile devices and web platforms. It interfaces with external systems such as payment gateways, GPS services, and third-party APIs for map integration. The system will use a modular architecture to facilitate scalability and maintainability.
 
 ### **2.2 Product Functions**
 - User registration and authentication.  
