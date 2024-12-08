@@ -5,7 +5,7 @@
 <img width="1440" alt="Screenshot 2024-12-03 at 6 44 33 PM" src="https://github.com/user-attachments/assets/c5c8ff92-effb-40d2-b726-9dda1378ee15">
 
 ### Context Level:
-This is depicted in the diagram. It illustrates the Zomato Clone Platform as the central system interacting with various external actors and systems:
+This is depicted in the diagram. It illustrates the Zomato Platform as the central system interacting with various external actors and systems:
 #### Primary Actors:
 Customers, Restaurant Owners, Delivery Partners, and Admins interact with the platform for different functionalities like browsing, managing menus, and delivery.
 #### External Systems:
@@ -16,7 +16,7 @@ Services like Payment Gateways, CDNs, Map Services, Analytics, and Ad Networks s
 
 ### *Containers:*
 
-#### **Zomato Clone App**: 
+#### **Zomato App**: 
 - **Description**: Central application that handles browsing, ordering, and delivery tracking for customers.
 - **Responsibilities**:
   - Displays restaurant menus and available dishes.
