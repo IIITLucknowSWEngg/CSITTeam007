@@ -124,7 +124,6 @@ The application will operate on Android and iOS mobile platforms, as well as web
   - Filters for cuisine, location, and ratings.  
   - Infinite scroll or pagination for results.  
 
----
 
 ### **4.1.2 Restaurant Pages**  
 - **Features**:  
@@ -132,7 +131,6 @@ The application will operate on Android and iOS mobile platforms, as well as web
   - Clear pricing and availability of dishes.  
   - Buttons for adding items to the cart or viewing more details.  
 
----
 
 ### **4.1.3 Cart and Checkout**  
 - **Features**:  
@@ -140,14 +138,12 @@ The application will operate on Android and iOS mobile platforms, as well as web
   - Multiple payment methods and promo code application.  
   - Order confirmation screen with tracking link.  
 
----
 
 ### **4.1.4 Delivery Tracking**  
 - **Features**:  
   - Real-time map updates for order status.  
   - Notifications for each status change (picked up, on the way, delivered).  
 
----
 
 ### **4.1.5 Admin Dashboard**  
 - **Features**:  
@@ -155,7 +151,6 @@ The application will operate on Android and iOS mobile platforms, as well as web
   - Tools for resolving disputes and monitoring performance.  
   - Exportable reports for analysis.  
 
----
 
 ### **4.1.6 Restaurant Partner Dashboard**  
 - **Features**:  
