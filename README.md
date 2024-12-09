@@ -1,7 +1,7 @@
 # CSITTeam007
 TEAM NAME : Agile Engineers
 
-PROJECT IDEA : Zomato Clone
+PROJECT IDEA : Zomato Competitor 
 
 ---
 ## **Github Issue Link**  
