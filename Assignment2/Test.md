@@ -1,4 +1,4 @@
-# Test Plan for Zomato Clon
+# Test Plan for Zomato Clone
 
 ## 1. Introduction
 - The Zomato Clone is a platform connecting users with restaurants and delivery services.
