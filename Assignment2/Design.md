@@ -155,7 +155,7 @@ APIs facilitate communication between the frontend, backend, and third-party ser
 
 ---
 
-## Conclusion  
+## Conclusi  
 
 This Software Design Description outlines the architecture, modules, database, and interfaces for the Zomato-like food delivery system, ensuring the application is robust, scalable, and secure. The use of modular design and external system integration ensures that the system is capable of efficiently handling a large number of users, restaurants, and orders, while providing a seamless and reliable user experience.
 
