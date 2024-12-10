@@ -134,7 +134,7 @@ Services like Payment Gateways, CDNs, Map Services, Analytics, and Ad Networks s
 
 
 ## 1.4 Deployment Diagram 🚀
-<img width="801" alt="Screenshot 2024-12-03 at 8 09 18 PM" src="">
+<img width="801" alt="Screenshot 2024-12-03 at 8 09 18 PM" src="https://github.com/user-attachments/assets/78a2d893-daf3-42d1-9cd5-f391a1d792f0">
 
 
 ### Customer Device
