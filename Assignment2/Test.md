@@ -98,7 +98,7 @@
 - The user is on the registration page.
 
 #### **When:**
-- The user enters valid information (name, email, password).
+- The user enters valid information (name, email, password). 
 
 #### **Then:**
 - The user should be successfully registered.  
