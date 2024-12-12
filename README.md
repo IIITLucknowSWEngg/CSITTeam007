@@ -8,7 +8,6 @@
 
 ---
 
----
 
 ## Zomato Clone - Project Overview 🍔🍕
 
