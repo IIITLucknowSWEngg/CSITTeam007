@@ -7,7 +7,7 @@
 ### Context Level:
 This is depicted in the diagram. It illustrates the Zomato Platform as the central system interacting with various external actors and systems:
 #### Primary Actors:
-Customers, Restaurant Owners, Delivery Partners, and Admins interact with the platform for different functionalities like browsing, managing menus, and delivery.
+Diners, Restaurant Owners, Delivery Partners, and Admins interact with the platform for different functionalities like browsing, managing menus, and delivery.
 #### External Systems:
 Services like Payment Gateways, CDNs, Map Services, Analytics, and Ad Networks support the platform through APIs or HTTPS.
 
@@ -82,20 +82,20 @@ The app communicates with the backend through the **API Gateway**, with data man
 
  ## 1.3 Component Diagram 🔥
 
-### 1.3.1 Customer feature:
+### 1.3.1 Diner feature:
  
 <img width="819" alt="Screenshot 2024-12-03 at 7 56 40 PM" src="https://github.com/user-attachments/assets/118e7bc7-e06f-4968-9c60-78e331ce70a6">
 
 #### Components:
 
-1. **User Interface**: 
+1. **Diner Interface**: 
    - Interacts with various services such as authentication, search, and order services.
    
 2. **Restaurant Interface**: 
    - Represents the service that allows restaurants to interact with the platform.
    
 3. **Order Service**: 
-   - Manages the user's order.
+   - Manages the Diner's order.
    - Communicates with the payment service to handle transactions.
    - Interacts with the restaurant service to notify the restaurant about new orders.
    
@@ -104,7 +104,7 @@ The app communicates with the backend through the **API Gateway**, with data man
 
 5. **Order Management**: 
    - Helps in managing the state and notifications related to orders.
-   - Notifies both the user and restaurant about the order's status.
+   - Notifies both the Diner and restaurant about the order's status.
 
 ### 1.3.2 Restaurant Interface:
 
@@ -122,7 +122,7 @@ The app communicates with the backend through the **API Gateway**, with data man
    
 2. **Restaurant Service**: 
    - Responsible for managing restaurant-specific data, such as menus and available food items.
-   - Interacts with the search service to display restaurants to users and with the order service to notify about new orders.
+   - Interacts with the search service to display restaurants to Diners and with the order service to notify about new orders.
 
 3. **Order Management**: 
    - Helps in managing the state and notifications related to orders from restaurants.
@@ -149,7 +149,7 @@ The app communicates with the backend through the **API Gateway**, with data man
 ## 1.4 Deployment Diagram 🚀
   ![deplyoment2](https://github.com/user-attachments/assets/429c0d1c-8d03-43b4-95ca-4e7167ca19c9)
 
-### Customer Device
+### Diner's Device
 
 - **Functionality**:
   - Access the Zomato app or website.
@@ -165,26 +165,26 @@ The app communicates with the backend through the **API Gateway**, with data man
 ### Zomato Backend Server
 - **Functionality**:
   - Process API requests and handle business logic.
-  - Authenticate users and manage database operations.
-  - Coordinate communication between customer and delivery modules.
+  - Authenticate Diners and manage database operations.
+  - Coordinate communication between Diner and delivery modules.
 
-### Customer Service Component
+### Diner Service Component
 - **Functionality**:
-  - Manage customer queries and complaints.
-  - Enable customer feedback, reviews, and ratings.
+  - Manage Diner queries and complaints.
+  - Enable Diner feedback, reviews, and ratings.
   - Integrate live chat for real-time assistance.
 
 ### Order Processing Component
 - **Functionality**:
   - Handle cart management, order placement, and checkout.
   - Process payments (credit card, wallet, COD).
-  - Notify users of order confirmation and updates.
+  - Notify Diners of order confirmation and updates.
 
 ### Driver Management Component
 - **Functionality**:
   - Assign delivery partners based on location and availability.
   - Track delivery progress and optimize routes.
-  - Update customer on real-time delivery status.
+  - Update Diner on real-time delivery status.
 
 ### Restaurant Database Admin
 - **Functionality**:
@@ -203,15 +203,15 @@ The app communicates with the backend through the **API Gateway**, with data man
   - Manages:
     - Payment authorization and verification.
     - Refunds and failed transaction handling.
-    - Sending payment confirmations to customers and Zomato backend.
+    - Sending payment confirmations to Diners and Zomato backend.
   - Ensures:
     - PCI-DSS compliance for secure data handling.
     - Encryption for sensitive information.
 
 ### Frontend Component
-  - Provides an engaging and responsive user interface for customers, delivery partners, and restaurant admins.
+  - Provides an engaging and responsive Diner interface for Diners, delivery partners, and restaurant admins.
 - **Functionality**:
-  - **Customer Interface**:
+  - **Diner Interface**:
     - Browse restaurants, menus, and offers.
     - Place orders and track delivery in real-time.
   - **Delivery Partner Interface**:
@@ -223,15 +223,15 @@ The app communicates with the backend through the **API Gateway**, with data man
     - Real-time updates via WebSockets or APIs.
     - Cross-platform compatibility (Web, Android, iOS).
     - Responsive design for all device types (mobile, tablet, desktop).
-    - Accessibility support for diverse user needs.
+    - Accessibility support for diverse Diner needs.
 
 
 
 
 ### Additional Insights:  
-- **Security Measures**: The system ensures end-to-end encryption for sensitive data like payment details and user credentials to prevent unauthorized access.  
-- **Scalability**: Designed with a microservices architecture, the platform supports horizontal scaling to handle a growing user base efficiently.  
-- **Performance Optimization**: Incorporates caching mechanisms and CDNs to deliver a seamless user experience with minimal latency.
+- **Security Measures**: The system ensures end-to-end encryption for sensitive data like payment details and Diner credentials to prevent unauthorized access.  
+- **Scalability**: Designed with a microservices architecture, the platform supports horizontal scaling to handle a growing Diner base efficiently.  
+- **Performance Optimization**: Incorporates caching mechanisms and CDNs to deliver a seamless Diner experience with minimal latency.
  
  
  
