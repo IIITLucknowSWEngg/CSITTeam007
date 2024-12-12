@@ -9,7 +9,7 @@
 ---
 
 
-## Zomato Clone - Project Overview 🍔🍕
+## Zomato  - Project Overview 🍔🍕
 
 Zomato Clone is an online platform designed to offer food delivery, dining, and takeout services, replicating the core functionalities of popular food delivery apps like Zomato. The project provides users with features such as browsing restaurants, viewing menus, placing orders, making secure payments, and tracking deliveries in real time. This project focuses on providing a seamless and secure experience for both diners and restaurant owners.
 
