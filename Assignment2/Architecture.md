@@ -2,22 +2,26 @@
 
 ## 1.1 System Context Diagram 🔥
 
-### Diner App  
+### Diner App
 ![Diner App Context Diagram](https://github.com/user-attachments/assets/da05f862-e253-4f7e-885f-cd5f3c31fd46)
+**Description**: The Diner App enables customers to browse menus, place orders, and make payments. It offers features like personalized recommendations, real-time delivery tracking, and user reviews.
 
-### Restaurant App  
+### Restaurant App
 ![Restaurant App Context Diagram](https://github.com/user-attachments/assets/a99fe2ac-0a70-4920-abd7-d4ae1b606b64)
+**Description**: The Restaurant App helps restaurant owners manage their menus, update availability, process incoming orders, and view performance analytics.
 
-### Delivery Executive App  
+### Delivery Executive App
 ![Delivery Executive Context Diagram](https://github.com/user-attachments/assets/23b27071-7a2d-4458-bec2-42051b87da0c)
+**Description**: The Delivery Executive App allows delivery partners to accept delivery requests, navigate through GPS-based routing, and update delivery statuses in real-time.
 
-### Admin App  
+### Admin App
 ![Admin App Context Diagram](https://github.com/user-attachments/assets/884f140f-ba7d-429e-bbe6-37dcff2a5d2e)
+**Description**: The Admin App provides tools for platform administrators to monitor system operations, handle escalations, and oversee user management and platform analytics.
 
-### Context Level Description  
+### Context Level Description
 The **System Context Diagram** illustrates the Zomato platform as the central system interacting with various external actors and systems.
 
-#### Primary Actors  
+#### Primary Actors
 1. **Diners**: Browse, order, and make payments for food deliveries.  
 2. **Restaurant Owners**: Manage menus, orders, and restaurant profiles.  
 3. **Delivery Partners**: Accept and deliver orders with GPS support.  
@@ -167,8 +171,9 @@ The app communicates with the backend through the **API Gateway**, with data man
 
 
 ## 1.4 Deployment Diagram 🚀
-  ![deplyoment2](https://github.com/user-attachments/assets/429c0d1c-8d03-43b4-95ca-4e7167ca19c9)
+![Deployment3](https://github.com/user-attachments/assets/abbc54b5-fccb-43f9-ab12-cd6aef569a07)
 
+  
 ### Diner's Device
 
 - **Functionality**:
