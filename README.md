@@ -24,20 +24,14 @@ TEAM MEMBERS :
 
 # Zomato
 
-<table style="width: 100%; border-collapse: collapse; border: none;">
-<tr>
-<td style="width: 70%; vertical-align: top; border: none;">
-
-Zomato is an online platform that enables food delivery, dining, and takeout services. Users can explore restaurants, browse menus, and read reviews using advanced filters like cuisine, location, and cost. The platform supports secure, real-time food ordering and delivery tracking, along with personalized recommendations and order history management. Additional features include table reservations, exclusive offers, and multi-language support for a seamless experience. For restaurant partners, Zomato offers tools for menu management, performance analytics, and marketing campaigns.
-
-</td>
-<td style="width: 30%; text-align: center; border: none;">
-
-<img src="https://github.com/user-attachments/assets/8e5056f8-2b30-41a2-91a9-3ef113445a06" alt="Zomato Logo" style="max-width: 80%; height: auto;">
-
-</td>
-</tr>
-</table>
+<div style="display: flex; align-items: center;">
+  <div style="flex: 1;">
+    Zomato is an online platform that enables food delivery, dining, and takeout services. Users can explore restaurants, browse menus, and read reviews using advanced filters like cuisine, location, and cost. The platform supports secure, real-time food ordering and delivery tracking, along with personalized recommendations and order history management. Additional features include table reservations, exclusive offers, and multi-language support for a seamless experience. For restaurant partners, Zomato offers tools for menu management, performance analytics, and marketing campaigns.
+  </div>
+  <div style="flex: 0;">
+    <img src="https://github.com/user-attachments/assets/8e5056f8-2b30-41a2-91a9-3ef113445a06" alt="Zomato Logo" width="150">
+  </div>
+</div>
 
 
 
