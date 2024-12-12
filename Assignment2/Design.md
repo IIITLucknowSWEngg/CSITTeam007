@@ -211,4 +211,4 @@ This Software Design Description for the Zomato platform ensures a robust, scala
 ---  
 
 > **Prompt 3:**  
-> Draft a database schema for a food delivery system similar to Zomato. Include key entities such as Users, Restaurants, Menu Items, Orders, Payments, and Reviews. Specify the relationships between these entities and provide an explanation of
+> Draft a database schema for a food delivery system similar to Zomato. Include key entities such as Users, Restaurants, Menu Items, Orders, Payments, and Reviews. Specify the relationships between these entities and provide an explanation.
