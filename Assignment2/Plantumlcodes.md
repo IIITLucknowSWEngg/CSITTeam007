@@ -390,7 +390,99 @@ AnalyticsService --> AdminPanel : "Sends analytics insights\n[HTTP]"
 
 
 ---
-# 1.3 Deployment Diagram Code
+# 1.3 Component Diagram UML codes:
+## 1.3.1 User Interface :
+```@startuml
+
+package "User Component" {
+  [User Interface] --> [Authentication Service]
+  [User Interface] --> [Search Service]
+  [User Interface] --> [Order Service]
+}
+
+package "Restaurant Component" {
+  [Restaurant Interface] --> [Restaurant Service]
+  [Restaurant Interface] --> [Order Management]
+}
+
+package "Order Component" {
+  [Order Service] --> [Payment Service]
+  [Order Service] --> [Order Management]
+}
+
+[User Interface] --> [Restaurant Interface] : "View Menu"
+[Search Service] --> [Restaurant Service] : "Search Restaurants"
+[Order Service] --> [Order Management] : "Place Order"
+[Order Management] --> [Payment Service] : "Initiate Payment"
+[Order Management] --> [Restaurant Service] : "Notify Restaurant"
+
+@enduml
+```
+## 1.3.2 Restaurant Interface:
+```
+@startuml
+
+package "Restaurant Component" {
+  [Restaurant Interface] --> [Restaurant Service]
+  [Restaurant Interface] --> [Order Management]
+}
+
+package "Order Component" {
+  [Order Service] --> [Payment Service]
+  [Order Service] --> [Order Management]
+}
+
+[User Interface] --> [Restaurant Interface] : "View Menu"
+[Search Service] --> [Restaurant Service] : "Search Restaurants"
+[Order Service] --> [Order Management] : "Place Order"
+[Order Management] --> [Restaurant Service] : "Notify Restaurant"
+
+@enduml
+```
+## 1.3.3 Admin Interface :
+```
+@startuml
+!theme
+title Admin - Component Diagram
+
+actor "Admin" as AdminActor #LightBlue
+
+package "Frontend" {
+  [Admin Panel]
+}
+
+package "Backend" {
+  [API Gateway]
+  [User Management Service]
+  [Order Service]
+  [Analytics Service]
+  [Notification Service]
+}
+
+package "Database" {
+  [Zomato Database]
+}
+
+package "External Systems" {
+  [Payment Gateway]
+}
+
+AdminActor --> [Admin Panel] : "Uses"
+[Admin Panel] --> [API Gateway] : "Sends Requests"
+
+[API Gateway] --> [User Management Service] : "Routes User Actions"
+[API Gateway] --> [Order Service] : "Routes Order Requests"
+[API Gateway] --> [Analytics Service] : "Routes Analytics Queries"
+[API Gateway] --> [Notification Service] : "Routes Notifications"
+
+[User Management Service] --> [Zomato Database] : "User Data"
+[Order Service] --> [Zomato Database] : "Order Data"
+[Analytics Service] --> [Zomato Database] : "Reads Data"
+[Notification Service] --> [Zomato Database] : "Logs Notifications"
+@enduml
+```
+
+# 1.4 Deployment Diagram Code
 ---
 ```
 @startuml
