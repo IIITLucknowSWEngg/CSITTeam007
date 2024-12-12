@@ -234,8 +234,122 @@ AdminDashboard --> NotificationService : "Send Notifications & Alerts"
 ```
 ---
 
-# Container Diagram Code 
+# Container Diagram  UML Code 
+
 ---
+## Diner App - Container Diagram
+```
+
+@startuml
+!theme
+skinparam classFontColor red
+title Diner App - Container Diagram
+
+actor "Diner" as Diner #LightBlue
+
+rectangle "Diner App\n(Mobile Application)" as DinerApp #Cornsilk
+rectangle "API Gateway\n(Handles API Requests)" as APIGateway #LightGray
+rectangle "Order Service\n(Manages Orders)" as OrderService #LightGreen
+rectangle "Payment Service\n(Handles Payments)" as PaymentService #LightYellow
+rectangle "Restaurant Service\n(Restaurant Management)" as RestaurantService #LightPink
+rectangle "Zomato Database\n(SQL Database)" as ZomatoDatabase #Thistle
+rectangle "Payment Gateway\n(GPay/Paytm/PayPal)" as PaymentGateway #Beige
+
+Diner -down-> DinerApp : "Interacts with\nfeatures [HTTPS]"
+DinerApp -down-> APIGateway : "Sends API requests\n[HTTPS]"
+APIGateway --> OrderService : "Routes order requests\n[HTTP]"
+APIGateway --> PaymentService : "Routes payment requests\n[HTTP]"
+APIGateway --> RestaurantService : "Routes restaurant\nmanagement requests [HTTP]"
+
+OrderService --> ZomatoDatabase : "Reads & writes order data\n[JDBC]"
+PaymentService --> ZomatoDatabase : "Reads & writes payment info\n[JDBC]"
+PaymentService --> PaymentGateway : "Processes online payments\n[API]"
+
+RestaurantService --> ZomatoDatabase : "Reads & writes restaurant data\n[JDBC]"
+
+@enduml
+```
+
+
+## Restaurant Owner - Container Diagram
+```
+@startuml
+!theme
+skinparam classFontColor red
+title Restaurant Owner - Container Diagram
+
+actor "Restaurant Owner" as RestaurantOwner #LightBlue
+
+' User Application: The restaurant owner interacts with this app.
+rectangle "Restaurant Owner App\n(Mobile/Web Application)" as RestaurantOwnerApp #Cornsilk
+
+' Core Backend: Manages communication, data storage, and processing.
+rectangle "API Gateway\n(Handles API Requests)" as APIGateway #LightGray
+rectangle "Order Service\n(Manages Orders)" as OrderService #LightGreen
+rectangle "Restaurant Service\n(Restaurant Management)" as RestaurantService #LightPink
+rectangle "Payment Service\n(Handles Payments)" as PaymentService #LightYellow
+rectangle "Analytics Service\n(Provides Insights)" as AnalyticsService #LightCyan
+
+' Data Layer: Stores all information used by the system.
+rectangle "Zomato Database\n(SQL Database)" as ZomatoDatabase #Thistle
+rectangle "Payment Gateway\n(GPay/PayPal etc.)" as PaymentGateway #Beige
+
+' Relationships: Define how the app, backend services, and data interact.
+RestaurantOwner -down-> RestaurantOwnerApp : "Interacts with\nfeatures [HTTPS]"
+
+RestaurantOwnerApp -down-> APIGateway : "Sends API requests\n[HTTPS]"
+APIGateway --> OrderService : "Routes order updates\n[HTTP]"
+APIGateway --> RestaurantService : "Routes restaurant management\n[HTTP]"
+APIGateway --> AnalyticsService : "Requests insights\n[HTTP]"
+
+OrderService --> ZomatoDatabase : "Reads & writes order data\n[JDBC]"
+RestaurantService --> ZomatoDatabase : "Reads & writes restaurant data\n[JDBC]"
+RestaurantService --> AnalyticsService : "Sends restaurant data\nfor insights [HTTP]"
+
+PaymentService --> ZomatoDatabase : "Reads & writes payment info\n[JDBC]"
+PaymentService --> PaymentGateway : "Processes payments\n[API]"
+
+AnalyticsService --> ZomatoDatabase : "Reads data\nfor analysis [JDBC]"
+AnalyticsService --> OrderService : "Provides insights on orders\n[HTTP]"
+
+@enduml
+```
+## Delivery Executive - Container Diagram:
+```
+@startuml
+!theme
+skinparam classFontColor red
+title Delivery Executive - Container Diagram
+
+actor "Delivery Executive" as DeliveryExecutive #LightBlue
+
+' User Application: The delivery executive interacts with this app.
+rectangle "Delivery Executive App\n(Mobile Application)" as DeliveryExecutiveApp #Cornsilk
+
+' Core Backend: Manages communication, data storage, and processing.
+rectangle "API Gateway\n(Handles API Requests)" as APIGateway #LightGray
+rectangle "Order Service\n(Manages Orders)" as OrderService #LightGreen
+rectangle "Delivery Service\n(Manages Deliveries)" as DeliveryService #LightPink
+rectangle "Zomato Database\n(SQL Database)" as ZomatoDatabase #Thistle
+rectangle "Analytics Service\n(Provides Insights)" as AnalyticsService #LightCyan
+rectangle "Payment Gateway\n(GPay/PayPal etc.)" as PaymentGateway #Beige
+
+' Relationships
+DeliveryExecutive -down-> DeliveryExecutiveApp : "Interacts with\nfeatures [HTTPS]"
+
+DeliveryExecutiveApp -down-> APIGateway : "Sends API requests\n[HTTPS]"
+APIGateway --> OrderService : "Routes order updates\n[HTTP]"
+APIGateway --> DeliveryService : "Routes delivery requests\n[HTTP]"
+
+DeliveryService --> ZomatoDatabase : "Reads & writes delivery data\n[JDBC]"
+DeliveryService --> AnalyticsService : "Sends delivery status data\nfor insights [HTTP]"
+
+PaymentGateway --> ZomatoDatabase : "Reads & writes payment data\n[JDBC]"
+
+AnalyticsService --> ZomatoDatabase : "Reads data for analysis\n[JDBC]"
+
+@enduml
+```
 
 ---
 # Deployment Diagram Code
