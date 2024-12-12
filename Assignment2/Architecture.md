@@ -36,9 +36,24 @@ This diagram shows the high-level architecture of the **Diner App** and its inte
 
 - **Zomato Database**: A central database that stores and manages all application data, including diner orders, payment transactions, restaurant details, and customer profiles.
 
-### 1.2.2 Restaurant App - Container Diagram
+### 1.2.2 Restaurant Owner - Container Diagram
 
 <img width="638" alt="Screenshot 2024-12-12 at 1 53 06 PM" src="https://github.com/user-attachments/assets/9299e2d3-164b-40f7-bfd3-9b07a86dd003" />
+
+
+This diagram depicts the architecture for the **Restaurant Owner** system. It includes the following components:
+
+- **Restaurant Owner App**: Mobile/web app for restaurant management.
+- **API Gateway**: Routes requests from the app to backend services.
+- **Order Service**: Manages orders.
+- **Restaurant Service**: Handles restaurant operations (menu, orders).
+- **Payment Service**: Processes payments via external gateways (e.g., GPay, PayPal).
+- **Analytics Service**: Provides insights on restaurant performance.
+- **Zomato Database**: Stores all data (orders, restaurant details).
+- **Payment Gateway**: External payment processor.
+
+The app communicates with backend services through the **API Gateway**, and data is managed in the **Zomato Database**.
+
 
 
 
