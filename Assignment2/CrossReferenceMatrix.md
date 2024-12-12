@@ -1,40 +1,12 @@
-## Cross-Reference Matrix for Zomato Clone :-
-
-| Stakeholder                     | URD Sections | URD Section Names               | SRS Sections | SRS Section Names                  |
-|---------------------------------|--------------|---------------------------------|--------------|-------------------------------------|
-| Software Development Team       | 3.1          | User Registration and Login      | 3.1          | User Registration and Authentication |
-| Software Development Team       | 3.3          | Food Browsing and Ordering       | 3.2          | Food Browsing and Ordering          |
-| Software Development Team       | 3.4          | Order Fulfillment                | 3.2          | Food Browsing and Ordering          |
-| Software Development Team       | 3.5          | Payment Processing               | 3.3          | Payment Processing                  |
-| Software Development Team       | 3.8          | Real-Time Tracking               | 3.4          | Real-Time Order Tracking            |
-| Product Managers                | 3.1          | User Registration and Login      | 3.1          | User Registration and Authentication |
-| Product Managers                | 3.3          | Food Browsing and Ordering       | 3.2          | Food Browsing and Ordering          |
-| Product Managers                | 4.2          | Security                         | 5.2          | Security Requirements               |
-| UI/UX Designers                 | 5.1          | Search and Discovery             | 4.1          | User Interfaces                     |
-| UI/UX Designers                 | 4.3          | Usability                        | 5.5          | Usability                           |
-| Quality Assurance (QA) Team     | 3.1          | User Registration and Login      | 3.1          | User Registration and Authentication |
-| Quality Assurance (QA) Team     | 3.4          | Order Fulfillment                | 3.2          | Food Browsing and Ordering          |
-| DevOps Engineers                | 4.4          | Reliability                      | 5.3          | Availability and Reliability         |
-| DevOps Engineers                | 4.5          | Scalability                      | 5.4          | Scalability                         |
-| Data Analysts and Scientists    | 5.1          | Search and Discovery             | 4.3          | Software Interfaces                 |
-| Data Analysts and Scientists    | 3.8          | Real-Time Tracking               | 3.4          | Real-Time Order Tracking            |
-| Cybersecurity Team              | 4.2          | Security                         | 5.2          | Security Requirements               |
-| System Architects               | 4.5          | Scalability                      | 5.4          | Scalability                         |
-| Customer Support Team           | 4.3          | Usability                        | 5.5          | Usability                           |
-| Market Analysts                 | 4.5          | Scalability                      | 5.4          | Scalability                         |
-| Market Analysts                 | 5.1          | Search and Discovery             | 4.3          | Software Interfaces                 |
-| Delivery Partners               | 3.4          | Order Fulfillment                | 4.4          | Communication Interfaces            |
-| Marketing and Growth Team       | 4.3          | Usability                        | 5.5          | Usability                           |
-| Legal and Compliance Team       | 4.2          | Security                         | 5.2          | Security Requirements               |
-| Accessibility Team              | 4.3          | Usability                        | 5.5          | Usability                           |
-| Data Privacy Officer            | 4.2          | Security                         | 5.2          | Security Requirements               |
-| API Integration Partners        | 5.1          | Search and Discovery             | 4.3          | Software Interfaces                 |
-| Customers                       | 3.1          | User Registration and Login      | 3.1          | User Registration and Authentication |
-| Customers                       | 3.3          | Food Browsing and Ordering       | 3.2          | Food Browsing and Ordering          |
-| Customers                       | 3.4          | Order Fulfillment                | 3.2          | Food Browsing and Ordering          |
-| Customers                       | 3.5          | Payment Processing               | 3.3          | Payment Processing                  |
-| Restaurant Owners               | 3.4          | Order Fulfillment                | 3.2          | Food Browsing and Ordering          |
-| Regulators                      | 4.2          | Security                         | 5.2          | Security Requirements               |
-| Advertisers and Sponsors        | 3.8          | Real-Time Tracking               | 3.4          | Real-Time Order Tracking            |
-
-
+| **Stakeholder**         | **URD Section Number** | **URD Topic**                     | **SRS Section Number** | **SRS Topic**                     | **Architecture Section**                | **Architecture Topic**                | **Design Sec Number** | **Design Topic**                     | **Test Sec Number** | **Test Topics**                     |
+|--------------------------|------------------------|------------------------------------|------------------------|------------------------------------|------------------------------------------|----------------------------------------|------------------------|---------------------------------------|----------------------|--------------------------------------|
+| Founders and Leadership | 1.1                    | Overview and Strategic Goals       | 1.2                    | Scope of the System               | 1.1 System Context Diagram              | Strategic Goals and Metrics            | 1.1, 1.2, 3.6         | Introduction, Scope, Workflow         | 6.1                  | System Testing                       |
+| Customers (Diners)      | 3.3                    | Food Browsing and Ordering         | 3.2                    | Food Browsing and Ordering Features | 1.2.1 Diner App Container Diagram      | Food Browsing and Ordering Features    | 4.1.1, 4.1.3          | User Interface, Service Layer Design  | 6.2                  | Customer Module Testing              |
+| Restaurant Partners     | 3.4                    | Order Fulfillment and Management   | 3.3                    | Restaurant Management             | 1.2.2 Restaurant Owner App Diagram      | Menu and Order Management              | 4.1.2, 4.2.3          | Controller Layer, Order Management    | 6.3                  | Restaurant Module Testing            |
+| Delivery Partners       | 3.4                    | Real-Time Delivery Management      | 3.4                    | Real-Time Order Tracking          | 1.2.3 Delivery Executive Diagram        | Real-Time Delivery Management          | 4.1.2, 4.2.1          | Controller Layer, API Gateway         | 6.4                  | Delivery Module Testing              |
+| Admins                  | 3.10                   | Admin Panel Management             | 4.1.5                  | Admin Dashboard Features          | 1.2.4 Admin Container Diagram           | Platform Monitoring                    | 4.1.1, 4.2.5          | Admin UI, Notification Service Design | 6.5                  | Admin Module Testing                 |
+| Investors and Shareholders | 1.1                 | Strategic Goals and Metrics        | 3.5                    | Payment Processing and Revenue Tracking | 1.1 System Context Diagram           | Financial Performance Dashboard         | 4.2.4, 6.1            | Payment Service, API Design           | 6.6                  | Financial Metrics Testing            |
+| Technology Providers    | 4.5                    | Scalability and Integration        | 4.3                    | External Interface Requirements   | 1.3 Component Diagram                   | Scalability and Integration            | 4.2.1, 6.2            | API Gateway, External Interface Design | 6.7                 | Integration and Performance Testing  |
+| Marketing Team          | 3.6                    | Ratings and Reviews System         | 4.4                    | User Interface Requirements       | 1.2.1 Diner App Container Diagram       | Ratings and Reviews System             | 4.1.1, 4.1.3          | UI Design, Service Layer Design       | 6.8                  | Ratings and Reviews Testing          |
+| Legal and Compliance Team | 4.2                  | Security and Compliance            | 5.2                    | Security Requirements             | 1.3 Component Diagram                   | Security and Compliance                | 4.2.2, 4.2.5          | Authentication Service, Notification Service | 6.9           | Security Testing                     |
+| Media and Public Relations | 3.6                 | Brand and Public Interaction       | 3.5                    | Ratings and Reviews System        | 1.2.1 Diner App Container Diagram       | Brand and Public Interaction           | 4.1.1, 4.1.3          | UI and Service Layer Design           | 6.10                 | Media Interaction Testing            |
