@@ -102,7 +102,31 @@ The app communicates with the backend through the **API Gateway**, with data man
 
 
 ---
+### 1.2.4 Admin - Container Diagram
 
+<img width="895" alt="Screenshot 2024-12-12 at 7 26 28 PM" src="https://github.com/user-attachments/assets/76707e59-bc54-495c-a52f-d42d756a1c52" />
+
+This diagram represents the architecture of the **Admin System**, showcasing the following components:
+
+- **Admin Panel**: A web application used by admins to manage users, orders, and system operations.
+- **API Gateway**: Routes requests from the Admin Panel to the backend services.
+- **User Management Service**: Handles user-related operations, such as account creation, updates, and deletion.
+- **Order Service**: Manages platform orders, allowing admins to view and control order data.
+- **Analytics Service**: Provides insights and analytics, such as trends and performance metrics, to assist decision-making.
+- **Notification Service**: Sends alerts and notifications about critical system events, such as escalations or errors.
+- **Zomato Database**: The central database storing all data, including users, orders, analytics, and notifications.
+
+### Key Interactions:
+1. **Admin Panel** interacts with the **API Gateway** to communicate with backend services.
+2. **API Gateway** routes requests to services like:
+   - **User Management Service** for user-related actions.
+   - **Order Service** for managing order data.
+   - **Analytics Service** for performance insights.
+   - **Notification Service** for sending alerts.
+3. Services interact with the **Zomato Database** to read and write data.
+4. **Analytics Service** provides detailed insights back to the Admin Panel.
+
+This structure enables efficient management of the platform by admins.
 
  
 
