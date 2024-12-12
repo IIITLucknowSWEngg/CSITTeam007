@@ -18,7 +18,7 @@ Services like Payment Gateways, CDNs, Map Services, Analytics, and Ad Networks s
 
 <img width="904" alt="Screenshot 2024-12-12 at 1 34 41 PM" src="https://github.com/user-attachments/assets/24ba4fbc-8682-424b-8e7e-f2082243498c" />
 
-#### Diner App - Container Diagram
+
 
 This diagram shows the high-level architecture of the **Diner App** and its interactions with core backend services.
 
@@ -36,7 +36,7 @@ This diagram shows the high-level architecture of the **Diner App** and its inte
 
 - **Zomato Database**: A central database that stores and manages all application data, including diner orders, payment transactions, restaurant details, and customer profiles.
 
-### 1.2.2 Restaurant Owner - Container Diagram
+### 1.2.2 Restaurant Owner 
 
 <img width="638" alt="Screenshot 2024-12-12 at 1 53 06 PM" src="https://github.com/user-attachments/assets/9299e2d3-164b-40f7-bfd3-9b07a86dd003" />
 
@@ -54,6 +54,9 @@ This diagram depicts the architecture for the **Restaurant Owner** system. It in
 
 The app communicates with backend services through the **API Gateway**, and data is managed in the **Zomato Database**.
 
+### 1.2.3 Delivery Executive :
+
+<img width="705" alt="Screenshot 2024-12-12 at 1 59 59 PM" src="https://github.com/user-attachments/assets/87ba2603-c99e-4279-8316-25aea44f96f4" />
 
 
 
