@@ -1,4 +1,4 @@
-# Zomato Clone Documentation  
+# Zomato  Documentation  
 **Team**: Agile Engineers 👨‍💻👩‍💻
 
 **Project Idea**: Zomato Competitor  
