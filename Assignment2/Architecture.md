@@ -1,16 +1,36 @@
-# 1. C4 Diagrams 🚀
+# C4 Diagrams 🚀
+
 ## 1.1 System Context Diagram 🔥
 
+### Diner App  
+![Diner App Context Diagram](https://github.com/user-attachments/assets/da05f862-e253-4f7e-885f-cd5f3c31fd46)
 
-<img width="1440" alt="Screenshot 2024-12-03 at 6 44 33 PM" src="https://github.com/user-attachments/assets/c5c8ff92-effb-40d2-b726-9dda1378ee15">
+### Restaurant App  
+![Restaurant App Context Diagram](https://github.com/user-attachments/assets/a99fe2ac-0a70-4920-abd7-d4ae1b606b64)
 
-### Context Level:
-This is depicted in the diagram. It illustrates the Zomato Platform as the central system interacting with various external actors and systems:
-#### Primary Actors:
-Diners, Restaurant Owners, Delivery Partners, and Admins interact with the platform for different functionalities like browsing, managing menus, and delivery.
-#### External Systems:
-Services like Payment Gateways, CDNs, Map Services, Analytics, and Ad Networks support the platform through APIs or HTTPS.
+### Delivery Executive App  
+![Delivery Executive Context Diagram](https://github.com/user-attachments/assets/23b27071-7a2d-4458-bec2-42051b87da0c)
 
+### Admin App  
+![Admin App Context Diagram](https://github.com/user-attachments/assets/884f140f-ba7d-429e-bbe6-37dcff2a5d2e)
+
+### Context Level Description  
+The **System Context Diagram** illustrates the Zomato platform as the central system interacting with various external actors and systems.
+
+#### Primary Actors  
+1. **Diners**: Browse, order, and make payments for food deliveries.  
+2. **Restaurant Owners**: Manage menus, orders, and restaurant profiles.  
+3. **Delivery Partners**: Accept and deliver orders with GPS support.  
+4. **Admins**: Manage platform operations and monitor performance.
+
+#### External Systems  
+- **Payment Gateways** (e.g., Razorpay, PayPal): For secure payments.  
+- **Map Services (GPS APIs)**: For real-time delivery tracking.  
+- **Notification Services**: Send alerts to users (SMS, email, app push notifications).  
+- **Analytics Services**: Provide insights into business performance.  
+- **Ad Networks & CDNs**: Optimize app performance and advertisements.  
+
+---
 ## 1.2 Container Diagram 🔥
 
 
