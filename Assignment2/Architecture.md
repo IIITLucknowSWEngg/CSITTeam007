@@ -59,6 +59,20 @@ The app communicates with backend services through the **API Gateway**, and data
 <img width="705" alt="Screenshot 2024-12-12 at 1 59 59 PM" src="https://github.com/user-attachments/assets/87ba2603-c99e-4279-8316-25aea44f96f4" />
 
 
+This diagram illustrates the architecture of the **Delivery Executive** system, including the following components:
+
+- **Delivery Executive App**: Mobile app used by delivery executives to manage orders and deliveries.
+- **API Gateway**: Routes requests from the app to backend services.
+- **Order Service**: Manages order details and updates.
+- **Delivery Service**: Handles delivery assignments and tracking.
+- **Zomato Database**: Stores all data (orders, deliveries, payments).
+- **Analytics Service**: Provides delivery-related performance insights.
+- **Payment Gateway**: External service for processing payments.
+
+The app communicates with the backend through the **API Gateway**, with data managed in the **Zomato Database**.
+
+
+
 
 
 
