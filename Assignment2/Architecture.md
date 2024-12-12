@@ -18,7 +18,7 @@ Services like Payment Gateways, CDNs, Map Services, Analytics, and Ad Networks s
 
 <img width="904" alt="Screenshot 2024-12-12 at 1 34 41 PM" src="https://github.com/user-attachments/assets/24ba4fbc-8682-424b-8e7e-f2082243498c" />
 
-####Diner App - Container Diagram
+#### Diner App - Container Diagram
 
 This diagram shows the high-level architecture of the **Diner App** and its interactions with core backend services.
 
