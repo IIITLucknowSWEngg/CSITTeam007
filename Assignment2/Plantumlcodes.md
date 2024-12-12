@@ -1,7 +1,7 @@
 
 #  Context Diagram Codes
 ---
-## Diner Code :
+## Diner App Code :
 ```
 @startuml
 skinparam backgroundColor #000000
@@ -62,7 +62,7 @@ DinerApp --> MapAPI : "Real-time Delivery Tracking"
 @enduml
 ```
 
-## Restaurant Code :
+## Restaurant App Code :
 ```
 @startuml
 skinparam backgroundColor #000000
@@ -119,7 +119,7 @@ RestaurantApp --> AnalyticsService : "View Sales & Performance Analytics"
 @enduml
 
 ```
-## Delivery Executive Code :
+## Delivery Executive App Code :
 ```
 @startuml
 skinparam backgroundColor #000000
@@ -174,7 +174,7 @@ DeliveryApp --> PaymentGateway : "Track Earnings & Payments"
 @enduml
 
 ```
-## Admin Code:
+## Admin App Code:
 
 ```
 @startuml
