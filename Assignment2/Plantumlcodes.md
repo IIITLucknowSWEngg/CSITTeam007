@@ -350,6 +350,44 @@ AnalyticsService --> ZomatoDatabase : "Reads data for analysis\n[JDBC]"
 
 @enduml
 ```
+## 1.2.4 Admin - Container Diagram:
+```
+@startuml
+!theme
+title Admin - Container Diagram
+
+actor "Admin" as AdminActor #LightBlue
+
+' Admin Panel: Interface used by admin users.
+rectangle "Admin Panel\n(Web Application)" as AdminPanel #Cornsilk
+
+' Core Backend: Manages communication, data storage, and processing.
+rectangle "API Gateway\n(Handles API Requests)" as APIGateway #LightGray
+rectangle "User Management Service\n(Manages Users)" as UserManagementService #LightGreen
+rectangle "Order Service\n(Manages Orders)" as OrderService #LightPink
+rectangle "Analytics Service\n(Provides Insights)" as AnalyticsService #LightCyan
+rectangle "Zomato Database\n(SQL Database)" as ZomatoDatabase #Thistle
+rectangle "Notification Service\n(Sends Alerts)" as NotificationService #LightYellow
+
+' Relationships
+AdminActor -down-> AdminPanel : "Uses [HTTPS]"
+AdminPanel -down-> APIGateway : "Sends API requests\n[HTTPS]"
+
+APIGateway --> UserManagementService : "Routes user-related requests\n[HTTP]"
+APIGateway --> OrderService : "Routes order management requests\n[HTTP]"
+APIGateway --> AnalyticsService : "Routes analytics requests\n[HTTP]"
+APIGateway --> NotificationService : "Routes notification requests\n[HTTP]"
+
+UserManagementService --> ZomatoDatabase : "Reads & writes user data\n[JDBC]"
+OrderService --> ZomatoDatabase : "Reads & writes order data\n[JDBC]"
+AnalyticsService --> ZomatoDatabase : "Reads data for analysis\n[JDBC]"
+NotificationService --> ZomatoDatabase : "Logs notifications\n[JDBC]"
+
+AnalyticsService --> AdminPanel : "Sends analytics insights\n[HTTP]"
+@enduml
+```
+
+
 
 ---
 # 1.3 Deployment Diagram Code
