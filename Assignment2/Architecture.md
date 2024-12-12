@@ -69,7 +69,7 @@ Services like Payment Gateways, CDNs, Map Services, Analytics, and Ad Networks s
 
  ## 1.3 Component Diagram 🔥
 
-### 1.3.1 Customer feature:
+### 1.3.1 Diner feature:
  
 <img width="819" alt="Screenshot 2024-12-03 at 7 56 40 PM" src="https://github.com/user-attachments/assets/118e7bc7-e06f-4968-9c60-78e331ce70a6">
 
@@ -115,11 +115,11 @@ Services like Payment Gateways, CDNs, Map Services, Analytics, and Ad Networks s
    - Helps in managing the state and notifications related to orders from restaurants.
    - Notifies the restaurant when a new order is placed and tracks the status of orders during their lifecycle.
   
-### Delivery Excutive interface:
+### 1.3.3 Delivery Excutive interface:
 
 <img width="692" alt="Screenshot 2024-12-03 at 8 08 18 PM" src="https://github.com/user-attachments/assets/4d804316-df79-48a0-b245-8a83785288ea">
 
-### Components:
+#### Components:
 
 1. **Delivery Partner Interface**: 
    - Represents the service that allows delivery partners to interact with the platform.
