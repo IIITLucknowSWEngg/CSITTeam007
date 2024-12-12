@@ -200,5 +200,15 @@ This Software Design Description for the Zomato platform ensures a robust, scala
 
 ### ChatGPT Prompt
 
-> **Prompt:**  
-> Create a Software Design Description (SDD) for a platform that connects restaurants with customers for food ordering and delivery. The SDD should include sections for introduction, system overview, architecture design, module design, database design, API design, and conclusion. Ensure the design is modular, scalable, and integrates external services like payment gateways, maps, and SMS gateways. Draw inspiration from platforms like Zomato and Uber, focusing on real-time communication and user-friendly interfaces.
+> **Prompt 1:**  
+> Generate a Software Design Description (SDD) for a food-ordering and delivery platform like Zomato. Include sections for introduction, system overview, frontend and backend architecture, module design, database design, API endpoints, and external service integration. Ensure the design supports scalability, real-time communication, and secure payment processing.  
+
+---  
+
+> **Prompt 2:**  
+> Create a detailed module design for a platform like Zomato, focusing on the following modules: Authentication, Restaurant Management, Order Management, Payment Integration, and Notification Service. Provide a brief description, features, and the technologies involved for each module.  
+
+---  
+
+> **Prompt 3:**  
+> Draft a database schema for a food delivery system similar to Zomato. Include key entities such as Users, Restaurants, Menu Items, Orders, Payments, and Reviews. Specify the relationships between these entities and provide an explanation of
