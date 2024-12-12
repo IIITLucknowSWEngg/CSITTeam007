@@ -1,7 +1,7 @@
 
-#  Context Diagram Codes
+#1.1  Context Diagram UML Codes
 ---
-## Diner App Code :
+## 1.1.1 Diner App Code :
 ```
 @startuml
 skinparam backgroundColor #000000
@@ -62,7 +62,7 @@ DinerApp --> MapAPI : "Real-time Delivery Tracking"
 @enduml
 ```
 
-## Restaurant App Code :
+##1.1.2 Restaurant App Code :
 ```
 @startuml
 skinparam backgroundColor #000000
@@ -119,7 +119,7 @@ RestaurantApp --> AnalyticsService : "View Sales & Performance Analytics"
 @enduml
 
 ```
-## Delivery Executive App Code :
+##1.1.3 Delivery Executive App Code :
 ```
 @startuml
 skinparam backgroundColor #000000
@@ -174,7 +174,7 @@ DeliveryApp --> PaymentGateway : "Track Earnings & Payments"
 @enduml
 
 ```
-## Admin App Code:
+## 1.1.4 Admin App Code:
 
 ```
 @startuml
@@ -234,10 +234,10 @@ AdminDashboard --> NotificationService : "Send Notifications & Alerts"
 ```
 ---
 
-# Container Diagram  UML Code 
+# 1.2 Container Diagram  UML Code 
 
 ---
-## Diner App - Container Diagram
+## 1.2.1 Diner App - Container Diagram
 ```
 
 @startuml
@@ -271,7 +271,7 @@ RestaurantService --> ZomatoDatabase : "Reads & writes restaurant data\n[JDBC]"
 ```
 
 
-## Restaurant Owner - Container Diagram
+## 1.2.2 Restaurant Owner - Container Diagram
 ```
 @startuml
 !theme
@@ -314,7 +314,7 @@ AnalyticsService --> OrderService : "Provides insights on orders\n[HTTP]"
 
 @enduml
 ```
-## Delivery Executive - Container Diagram:
+## 1.2.3 Delivery Executive - Container Diagram:
 ```
 @startuml
 !theme
@@ -352,7 +352,7 @@ AnalyticsService --> ZomatoDatabase : "Reads data for analysis\n[JDBC]"
 ```
 
 ---
-# Deployment Diagram Code
+# 1.3 Deployment Diagram Code
 ---
 ```
 @startuml
