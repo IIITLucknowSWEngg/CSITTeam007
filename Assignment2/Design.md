@@ -198,6 +198,8 @@ Sends notifications for order updates, promotions, and reminders.
 ## 7. Conclusion
 This Software Design Description for the Zomato platform ensures a robust, scalable, and secure food-ordering and delivery system. The modular architecture and external service integrations provide an efficient and seamless experience for customers, restaurants, and delivery partners alike.
 
+###  Zomato Design reference : https://medium.com/@priyanka_pen/zomato-architecture-and-system-design-6095e2b2d7c5
+
 ### ChatGPT Prompt
 
 > **Prompt 1:**  
