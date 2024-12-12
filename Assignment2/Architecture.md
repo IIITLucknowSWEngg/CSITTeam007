@@ -101,7 +101,7 @@ The app communicates with the backend through the **API Gateway**, with data man
 
 
 
----
+
 ### 1.2.4 Admin - Container Diagram
 
 <img width="895" alt="Screenshot 2024-12-12 at 7 26 28 PM" src="https://github.com/user-attachments/assets/76707e59-bc54-495c-a52f-d42d756a1c52" />
@@ -131,7 +131,7 @@ This structure enables efficient management of the platform by admins.
  
 
 
-
+---
  ## 1.3 Component Diagram 🔥
 
 ### 1.3.1 Diner feature:
@@ -197,6 +197,27 @@ This structure enables efficient management of the platform by admins.
 3. **Order Management**: 
    - Helps in managing the state and notifications related to orders, including communicating with delivery partners to update them about new orders that need to be delivered.
 
+
+### 1.3.4 Admin interface :
+<img width="712" alt="Screenshot 2024-12-12 at 7 34 25 PM" src="https://github.com/user-attachments/assets/539c56ac-6166-4d68-bacb-410764a3e57a" />
+
+This diagram outlines the components of the **Admin System**:
+
+- **Admin Panel**: The frontend web interface used by admins to manage users, orders, and analytics.
+- **API Gateway**: The entry point that routes requests between the Admin Panel and backend services.
+- **User Management Service**: Handles user-related operations like account creation and updates.
+- **Order Service**: Manages order-related data and operations.
+- **Analytics Service**: Provides performance metrics and insights for the platform.
+- **Notification Service**: Sends alerts and logs notifications for system events.
+- **Zomato Database**: Stores all data, including users, orders, and notifications.
+
+### Key Interactions:
+- **Admin Panel** communicates with the backend via the **API Gateway**.
+- Backend services interact with the **Zomato Database** for data storage and retrieval.
+- The system ensures efficient admin operations with clear separation of concerns.
+
+
+---
 
 ## 1.4 Deployment Diagram 🚀
 ![Deployment3](https://github.com/user-attachments/assets/abbc54b5-fccb-43f9-ab12-cd6aef569a07)
