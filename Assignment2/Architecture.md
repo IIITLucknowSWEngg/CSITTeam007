@@ -2,22 +2,22 @@
 
 ## 1.1 System Context Diagram 🔥
 
-### Diner App
+### 1.1.1 Diner App
 ![Diner App Context Diagram](https://github.com/user-attachments/assets/da05f862-e253-4f7e-885f-cd5f3c31fd46)
 **Description**: The Diner App enables customers to browse menus, place orders, and make payments. It offers features like personalized recommendations, real-time delivery tracking, and user reviews.
 
 
-### Restaurant App
+### 1.1.2 Restaurant App
 ![Restaurant App Context Diagram](https://github.com/user-attachments/assets/a99fe2ac-0a70-4920-abd7-d4ae1b606b64)
 **Description**: The Restaurant App helps restaurant owners manage their menus, update availability, process incoming orders, and view performance analytics.
 
 
-### Delivery Executive App
+### 1.1.3 Delivery Executive App
 ![Delivery Executive Context Diagram](https://github.com/user-attachments/assets/23b27071-7a2d-4458-bec2-42051b87da0c)
 **Description**: The Delivery Executive App allows delivery partners to accept delivery requests, navigate through GPS-based routing, and update delivery statuses in real-time.
 
 
-### Admin App
+### 1.1.4 Admin App
 ![Admin App Context Diagram](https://github.com/user-attachments/assets/884f140f-ba7d-429e-bbe6-37dcff2a5d2e)
 **Description**: The Admin App provides tools for platform administrators to monitor system operations, handle escalations, and oversee user management and platform analytics.
 
