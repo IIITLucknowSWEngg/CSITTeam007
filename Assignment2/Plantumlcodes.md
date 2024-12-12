@@ -1,5 +1,5 @@
 
-#1.1  Context Diagram UML Codes
+# 1.1  Context Diagram UML Codes
 ---
 ## 1.1.1 Diner App Code :
 ```
@@ -62,7 +62,7 @@ DinerApp --> MapAPI : "Real-time Delivery Tracking"
 @enduml
 ```
 
-##1.1.2 Restaurant App Code :
+## 1.1.2 Restaurant App Code :
 ```
 @startuml
 skinparam backgroundColor #000000
@@ -119,7 +119,7 @@ RestaurantApp --> AnalyticsService : "View Sales & Performance Analytics"
 @enduml
 
 ```
-##1.1.3 Delivery Executive App Code :
+## 1.1.3 Delivery Executive App Code :
 ```
 @startuml
 skinparam backgroundColor #000000
