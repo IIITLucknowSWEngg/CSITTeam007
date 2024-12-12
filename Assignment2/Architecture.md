@@ -14,6 +14,30 @@ Services like Payment Gateways, CDNs, Map Services, Analytics, and Ad Networks s
 ## 1.2 Container Diagram 🔥
 <img width="801" alt="Screenshot 2024-12-03 at 7 18 29 PM" src="https://github.com/user-attachments/assets/a86968fe-a05d-4178-8dba-1d666bf12dbf">
 
+### 1.2.1 Diner App :
+
+<img width="904" alt="Screenshot 2024-12-12 at 1 34 41 PM" src="https://github.com/user-attachments/assets/24ba4fbc-8682-424b-8e7e-f2082243498c" />
+
+#### Diner App - Container Diagram
+
+This diagram shows the high-level architecture of the **Diner App** and its interactions with core backend services.
+
+##### Components:
+
+- **Diner App**: The mobile application used by diners to browse restaurants, place orders, and make payments. It interacts with backend services through API calls.
+  
+- **API Gateway**: The entry point for all requests from the Diner App. It routes requests to the appropriate backend services such as order management and payment processing.
+
+- **Order Service**: Handles all operations related to managing diner orders, including creating new orders, updating their status, and tracking progress until delivery.
+
+- **Payment Service**: Manages all payment transactions, processing payments through various external gateways like GPay, PayPal, or others. It ensures secure payment handling and stores payment-related data.
+
+- **Restaurant Service**: Manages restaurant-specific data such as menus, order confirmation, and restaurant profiles. It interacts with both the Zomato database and external services.
+
+- **Zomato Database**: A central database that stores and manages all application data, including diner orders, payment transactions, restaurant details, and customer profiles.
+
+
+
 ### *Containers:*
 
 #### **Zomato App**: 
