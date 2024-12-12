@@ -147,10 +147,10 @@ The app communicates with the backend through the **API Gateway**, with data man
 
 
 ## 1.4 Deployment Diagram 🚀
-<img width="801" alt="Screenshot 2024-12-03 at 8 09 18 PM" src="https://github.com/IIITLucknowSWEngg/CSITTeam007/blob/main/Assignment2/DeployZomato.png">
-
+  ![deplyoment2](https://github.com/user-attachments/assets/429c0d1c-8d03-43b4-95ca-4e7167ca19c9)
 
 ### Customer Device
+
 - **Functionality**:
   - Access the Zomato app or website.
   - Browse restaurants, menus, and offers.
@@ -225,52 +225,6 @@ The app communicates with the backend through the **API Gateway**, with data man
     - Responsive design for all device types (mobile, tablet, desktop).
     - Accessibility support for diverse user needs.
 
-### 1.4.1 Swimlane Diagram 
-A swimlane diagram is a type of flowchart that organizes processes into lanes to show responsibilities and interactions between participants (teams, departments, or systems). Each lane represents a participant, and the steps are aligned in their respective lanes.
-
-<img width="801" alt="Screenshot 2024-12-03 at 8 09 18 PM" src="https://github.com/user-attachments/assets/fa974e42-f78f-42e1-be00-d7c892ff26a3">
-
-- **Flow Summary**:
-1. Customer Interaction:
-
-   - Customers interact with the app (via User Interface Package) to place orders.Orders are routed to the Order Processing Component through the backend.Payment is processed via the Payment Gateway.
-
-2. Restaurant Admin:
-
-   - Admins manage orders and update menus using their respective components.
-
-3. Delivery Workflow:
-
-   - Delivery personnel receive orders and navigate via the Delivery Device, which is updated by Google Maps API and the Driver Management Component.
-
-4. Backend Centralization:
-
-   - All components communicate via the Zomato Backend Server.
-
-CODE:
-```
-@startuml
-|Customer|
-start
-:Place Order;
-:Payment Process;
-|Backend Server|
-:Validate Order;
-:Fetch Data from Customer Database;
-:Send Confirmation;
-|Order Processing|
-:Process Order;
-|Admin|
-:Update Restaurant Database;
-|Driver Management|
-:Assign Delivery Person;
-|Delivery Person|
-:Receive Order Details;
-:Navigate using Google Maps API;
-:Deliver Order;
-stop
-@enduml
-```
 
 
 
