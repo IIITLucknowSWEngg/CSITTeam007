@@ -1,162 +1,199 @@
-# Zomato Project Design Documentation
+# Software Design Description (SDD)
 
-## Introduction  
+## 1. Introduction
 
-### Purpose  
-This project intends to deliver a seamless food-ordering and delivery experience for users while supporting restaurants and delivery agents with robust tools to optimize operations.
+### 1.1 Purpose
+The purpose of this Software Design Description (SDD) is to provide a detailed design for the Zomato food-ordering and delivery application. This document describes the system's architecture, components, interfaces, and their interactions to ensure that the implementation meets the functional and non-functional requirements.
 
-### Scope  
-The Zomato system enables users to request, order, and pay for food via a mobile app and web app. Restaurants are able to offer services through the same platform. The system includes:  
-- Mobile application and web application interfaces.  
-- Backend API services.  
-- Payment processing integration.  
-- Real-time communication.  
-- External integrations with services like maps and SMS gateways.
-
----
-
-## Frontend Design  
-
-### Web  
-- **Framework:** React.js  
-- **Features:**  
-  - Restaurant search and filtering.  
-  - Menu display and ordering.  
-  - Real-time order tracking.  
-  - User profile management.  
-
-### Mobile  
-- **Framework:** Flutter  
-- **Features:**  
-  - Location-based restaurant suggestions.  
-  - Interactive maps for delivery tracking.  
-  - Push notifications for order status updates.  
-  - Intuitive UI for easy navigation.
+### 1.2 Scope
+The Zomato system enables users to browse restaurants, place food orders, and make payments through a mobile or web app. Restaurants can manage menus and orders, while delivery partners fulfill requests. The system includes:
+- Mobile and web applications.
+- Backend API services.
+- Payment processing integration.
+- Real-time communication.
+- External services like maps and SMS gateways.
 
 ---
 
-## Backend Design  
+## 2. System Overview
 
-### Web  
-- **Framework:** Node.js (Express.js)  
-- **Services:**  
-  - Authentication (JWT-based).  
-  - Search and filter restaurants.  
-  - Order management and status updates.  
+The Zomato system is composed of three main modules:
 
-### Mobile  
-- **Framework:** Django REST Framework  
-- **Services:**  
-  - User-specific data (preferences, past orders).  
-  - Real-time notifications (via Firebase or Kafka).  
-  - API integration with 3rd-party delivery systems.  
+- **User Interface**: Mobile/Web apps for customers, restaurants, and delivery agents.
+- **Backend System**: API and business logic for order processing and user management.
+- **External Services**: Third-party integrations for payment gateways, maps, and SMS.
+
+The system operates across Android, iOS, and web platforms and communicates with a backend via REST APIs, employing scalable cloud-based architecture for high performance and availability.
 
 ---
 
-## Module Design  
+## 3. Architecture Design
 
-### Overview  
-The module design describes how the different components of the system interact to form the complete solution. These modules cover both the frontend and backend systems and their interdependencies.
+### 3.1 Architecture Components
 
-### Frontend Modules  
-The frontend is designed to be modular, each responsible for a specific feature of the application.  
+#### User Interfaces
+- **Customer App and Web Interface**
+  - Search and filter restaurants.
+  - View menus and place orders.
+  - Track orders in real-time.
+  - Integrated payment options.
+  - Review and rate restaurants/delivery partners.
 
-1. **Restaurant Module**  
-   - **Features:** Search restaurants, display restaurant menu, order food.  
-   - **Technology:** React.js, Redux for state management.
+- **Restaurant Dashboard**
+  - Menu and order management.
+  - Insights into performance and customer reviews.
+  - Integration with promotions and offers.
 
-2. **User Module**  
-   - **Features:** Manage user profile, preferences, order history.  
-   - **Technology:** React.js, Redux for user state management.  
+- **Delivery Partner App**
+  - Real-time delivery requests.
+  - Navigation for delivery routes.
+  - Earnings tracking.
 
-3. **Order Module**  
-   - **Features:** Add items to the cart, proceed to checkout, track order status.  
-   - **Technology:** React.js, Redux for order state management.
 
-4. **Payment Module**  
-   - **Features:** Handle payment transactions via different methods (Card, UPI, Wallet).  
-   - **Technology:** React.js, integrate with Payment Gateway API.
+#### Backend Services
+- **Authentication**  
+  Secure user authentication using JWT tokens for customers, restaurants, and delivery agents.
+
+- **Order Management**  
+  Handles the lifecycle of food orders, including placement, status updates, and cancellations.
+
+- **Real-time Communication**  
+  WebSocket-based real-time updates for order tracking and delivery progress.
+
+- **Payment Processing**  
+  Integrates with external payment gateways like Razorpay or Stripe for secure transactions.
+
+- **Notification Service**  
+  Sends notifications for order confirmations, updates, and promotional offers.
+
+#### Databases
+- **PostgreSQL**  
+  Stores structured data (user profiles, restaurant details, orders, payments).
+
+- **Redis**  
+  Caches real-time data (active orders, delivery partner locations).
+
+#### External APIs
+- **Google Maps API**  
+  Enables location services for restaurant search, delivery routing, and order tracking.
+
+- **Payment Gateways**  
+  Secure payment processing and refunds.
+
+- **SMS Gateway**  
+  Sends real-time notifications to customers and delivery agents.
+
+---
+
+### 3.6 Workflow Overview
+1. **Customer places an order**
+   - Browses menu, selects items, and completes the checkout process.
+   - Backend creates an order and assigns it to a nearby restaurant.
+
+2. **Restaurant prepares the order**
+   - Updates the status to "ready for pickup."
+
+3. **Delivery partner picks up the order**
+   - Receives delivery request and navigates to the restaurant.
+
+4. **Order is delivered**
+   - Updates the status to "delivered," and payment is processed.
+
+5. **Admin and analytics**
+   - Admin dashboard monitors performance metrics and manages the system.
+
+---
+
+## 4. Module Design
+
+### 4.1 Mobile/Web Application (Frontend)
+
+#### 4.1.1 User Interface
+Designed to be simple, intuitive, and responsive. Key components:
+- Restaurant Search
+- Menu Display
+- Order Tracking
+- Payment Screen
+- User Profile Management
+
+#### 4.1.2 Controller Layer
+Handles customer, restaurant, and delivery partner requests and communicates with the service layer.
+
+#### 4.1.3 Service Layer
+Implements core business logic, such as order placement, payment processing, and notifications.
 
 ### Frontend Architecture  
 ![frontend architecture](https://github.com/user-attachments/assets/38b69204-26d9-40e2-9b89-c5b887d79921)
 
-### Backend Modules  
-The backend consists of several services that manage business logic, data processing, and interaction with external services.  
 
-1. **Authentication Module**  
-   - **Features:** User registration, login, JWT token management.  
-   - **Technology:** Node.js, Express.js.
+---
 
-2. **Restaurant Management Module**  
-   - **Features:** Restaurant registration, menu management, order management.  
-   - **Technology:** Node.js, Express.js, MongoDB.
+### 4.2 Backend System (Server-side)
 
-3. **Order Management Module**  
-   - **Features:** Process orders, update status, handle cancellations.  
-   - **Technology:** Node.js, Express.js, MongoDB.
+#### 4.2.1 API Gateway
+Serves as the single entry point for all requests, routing them to appropriate backend services.
 
-4. **Payment Gateway Integration Module**  
-   - **Features:** Process payments, handle different payment methods, update transaction status.  
-   - **Technology:** Node.js, integrate with Payment Gateway API (e.g., Razorpay, Stripe).
+#### 4.2.2 Authentication Service
+Handles user login, registration, and account management.
 
-5. **Notification Module**  
-   - **Features:** Send real-time notifications to users for order updates, restaurant offers.  
-   - **Technology:** Firebase or Kafka for real-time notifications.
+#### 4.2.3 Order Management Service
+- **Order Placement**: Links customers with restaurants.
+- **Order Tracking**: Tracks order status in real-time.
+- **Order Cancellation**: Handles customer-initiated cancellations.
+
+#### 4.2.4 Payment Service
+Manages payment transactions, maintains order payment history, and processes refunds.
+
+#### 4.2.5 Notification Service
+Sends notifications for order updates, promotions, and reminders.
+
+---
 
 ### Backend Architecture  
 ![backend architecture](https://github.com/user-attachments/assets/6463618a-7567-491b-8564-f456afb40eab)
 
 ---
 
-## Database Design  
-![Screenshot 2024-12-03 194425](https://github.com/user-attachments/assets/bdf4d4ad-01a4-42e3-bc28-0142f39a26d2)
+## 5. Database Design
+- **Users**: Stores details of customers, restaurants, and delivery partners.
+- **Orders**: Contains order-specific information, including status, payment, and delivery details.
+- **Restaurants**: Stores menu items, restaurant details, and reviews.
+- **Payments**: Maintains transaction records and payment statuses.
 
-**Relationships:**  
-- One-to-Many: Restaurants → Menu_Items.  
-- One-to-Many: Users → Orders.  
+![Screenshot 2024-12-03 194425](https://github.com/user-attachments/assets/bdf4d4ad-01a4-42e3-bc28-0142f39a26d2)
 
 ---
 
-## API Design  
+## 6. Interface Design
 
-### Overview  
-APIs facilitate communication between the frontend, backend, and third-party services. They are organized around REST principles for simplicity and consistency.  
+### 6.1 API Design
+- **Authentication:**
+  - `POST /api/login`
+  - `POST /api/register`
 
-### Key Endpoints  
-1. **Authentication Service:**  
-   - `POST /api/login` - User authentication.  
-   - `POST /api/register` - User registration.  
+- **Order Management:**
+  - `POST /api/orders`
+  - `GET /api/orders/:id`
 
-2. **Restaurant Management:**  
-   - `GET /api/restaurants` - Fetch a list of restaurants.  
-   - `POST /api/restaurants` - Add a new restaurant.  
+- **Restaurant Management:**
+  - `GET /api/restaurants`
+  - `POST /api/restaurants/menu`
 
-3. **Order Management:**  
-   - `POST /api/orders` - Create a new order.  
-   - `GET /api/orders/:id` - Get order details.  
-
-4. **Payment Service:**  
-   - `POST /api/payment` - Initiate a payment.  
-   - `GET /api/payment/status` - Check payment status.  
+- **Payment Processing:**
+  - `POST /api/payments`
+  - `GET /api/payments/status`
 
 ### API Design Diagram  
 ![API Design UML](https://github.com/user-attachments/assets/f4df1b2d-73c3-4476-9f02-9f217accbb8e)
 
 ---
 
-## Non-Functional Requirements  
-
-- **Scalability:** The app should handle a large number of concurrent users and orders.  
-- **Performance:** The app should have low latency, with fast loading times and smooth interactions.  
-- **Security:** User data, particularly payment information, must be securely handled and stored.  
-- **Reliability:** The app should have high availability, with minimal downtime and robust error handling.  
-- **Usability:** The app should be user-friendly, with an intuitive interface and easy navigation.  
-- **Compliance:** The app must comply with relevant regulations (e.g., PCI-DSS for payment processing).  
+### 6.2 External System Interfaces
+- **Payment Gateways**: Processes payments and refunds.
+- **Google Maps API**: Facilitates navigation and delivery tracking.
+- **SMS Gateway**: Sends order status updates to users.
 
 ---
 
-## Conclusion  
-
-This Software Design Description outlines the architecture, modules, database, and interfaces for the Zomato-like food delivery system, ensuring the application is robust, scalable, and secure. The use of modular design and external system integration ensures that the system is capable of efficiently handling a large number of users, restaurants, and orders, while providing a seamless and reliable user experience.
-
----
+## 7. Conclusion
+This Software Design Description for the Zomato platform ensures a robust, scalable, and secure food-ordering and delivery system. The modular architecture and external service integrations provide an efficient and seamless experience for customers, restaurants, and delivery partners alike.
