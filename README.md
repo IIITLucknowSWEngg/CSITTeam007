@@ -21,17 +21,17 @@ TEAM MEMBERS :
 | Aditya Raj | LIT2023003 | Information Technology | raj779226@gmail.com | Aditya2023003 |
 | Sai Lokesh Reddy Chintalapudi | LIT2023057 | Information Technology | sailokesh.chintalapudi@gmail.com | Sailokesh321 |
 
+---
 
 # Zomato
 
-<div style="display: flex; align-items: center;">
-  <p style="flex: 2; margin-right: 20px;">
-    Zomato is an online platform that enables food delivery, dining, and takeout services. Users can explore restaurants, browse menus, and read reviews using advanced filters like cuisine, location, and cost. The platform supports secure, real-time food ordering and delivery tracking, along with personalized recommendations and order history management. Additional features include table reservations, exclusive offers, and multi-language support for a seamless experience. For restaurant partners, Zomato offers tools for menu management, performance analytics, and marketing campaigns.
-  </p>
-  <p style="flex: 1; text-align: center;">
-    <img src="https://github.com/user-attachments/assets/8e5056f8-2b30-41a2-91a9-3ef113445a06" alt="Zomato Logo" style="max-width: 100%; height: auto; width: 150px;">
-  </p>
-</div>
+Zomato is an online platform that enables food delivery, dining, and takeout services. Users can explore restaurants, browse menus, and read reviews using advanced filters like cuisine, location, and cost. The platform supports secure, real-time food ordering and delivery tracking, along with personalized recommendations and order history management. Additional features include table reservations, exclusive offers, and multi-language support for a seamless experience. For restaurant partners, Zomato offers tools for menu management, performance analytics, and marketing campaigns.
+
+---
+
+# Viva Screenshot
+
+![viva](https://github.com/user-attachments/assets/9a0f43c3-2f45-4a98-9bb8-eadfb4d70687)
 
 
 
