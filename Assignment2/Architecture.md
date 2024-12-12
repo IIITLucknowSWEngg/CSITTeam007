@@ -69,7 +69,7 @@ Services like Payment Gateways, CDNs, Map Services, Analytics, and Ad Networks s
 
  ## 1.3 Component Diagram 🔥
 
-### 1.3.1 Diner feature:
+### 1.3.1 Customer feature:
  
 <img width="819" alt="Screenshot 2024-12-03 at 7 56 40 PM" src="https://github.com/user-attachments/assets/118e7bc7-e06f-4968-9c60-78e331ce70a6">
 
