@@ -205,6 +205,8 @@ This Software Design Description for the Zomato platform ensures a robust, scala
 ### 1)System design reference : https://blog.zomato.com/sushi
 ### 2)System design reference : https://uxdesign.cc/developing-the-zomato-design-system-438357188904
 
+---
+
 ### ChatGPT Prompt
 
 > **Prompt 1:**  
