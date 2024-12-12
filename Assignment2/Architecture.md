@@ -242,23 +242,21 @@ A swimlane diagram is a type of flowchart that organizes processes into lanes to
 <img width="801" alt="Screenshot 2024-12-03 at 8 09 18 PM" src="https://github.com/user-attachments/assets/fa974e42-f78f-42e1-be00-d7c892ff26a3">
 
 - **Flow Summary**:
-- Customer Interaction:
+1. Customer Interaction:
 
-Customers interact with the app (via User Interface Package) to place orders.
-Orders are routed to the Order Processing Component through the backend.
-Payment is processed via the Payment Gateway.
+   - Customers interact with the app (via User Interface Package) to place orders.Orders are routed to the Order Processing Component through the backend.Payment is processed via the Payment Gateway.
 
-- Restaurant Admin:
+2. Restaurant Admin:
 
-Admins manage orders and update menus using their respective components.
+   - Admins manage orders and update menus using their respective components.
 
-- Delivery Workflow:
+3. Delivery Workflow:
 
-Delivery personnel receive orders and navigate via the Delivery Device, which is updated by Google Maps API and the Driver Management Component.
+   - Delivery personnel receive orders and navigate via the Delivery Device, which is updated by Google Maps API and the Driver Management Component.
 
-- Backend Centralization:
+4. Backend Centralization:
 
-All components communicate via the Zomato Backend Server.
+   - All components communicate via the Zomato Backend Server.
 
 CODE:
 ```
