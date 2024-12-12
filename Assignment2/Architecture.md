@@ -12,7 +12,7 @@ Customers, Restaurant Owners, Delivery Partners, and Admins interact with the pl
 Services like Payment Gateways, CDNs, Map Services, Analytics, and Ad Networks support the platform through APIs or HTTPS.
 
 ## 1.2 Container Diagram 🔥
-<img width="801" alt="Screenshot 2024-12-03 at 7 18 29 PM" src="https://github.com/user-attachments/assets/a86968fe-a05d-4178-8dba-1d666bf12dbf">
+
 
 ### 1.2.1 Diner App :
 
