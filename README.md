@@ -24,7 +24,19 @@ TEAM MEMBERS :
 
 # Zomato
 
+<table>
+<tr>
+<td style="width: 60%; vertical-align: top;">
+
 Zomato is an online platform that enables food delivery, dining, and takeout services. Users can explore restaurants, browse menus, and read reviews using advanced filters like cuisine, location, and cost. The platform supports secure, real-time food ordering and delivery tracking, along with personalized recommendations and order history management. Additional features include table reservations, exclusive offers, and multi-language support for a seamless experience. For restaurant partners, Zomato offers tools for menu management, performance analytics, and marketing campaigns.
 
-![Screenshot 2024-12-12 163133](https://github.com/user-attachments/assets/8e5056f8-2b30-41a2-91a9-3ef113445a06)
+</td>
+<td style="width: 40%; text-align: center;">
+
+<img src="https://github.com/user-attachments/assets/8e5056f8-2b30-41a2-91a9-3ef113445a06" alt="Screenshot" style="max-width: 100%; height: auto;">
+
+</td>
+</tr>
+</table>
+
 
