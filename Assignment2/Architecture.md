@@ -305,7 +305,7 @@ This diagram outlines the components of the **Admin System**:
 ### Additional Insights:  
 - **Security Measures**: The system ensures end-to-end encryption for sensitive data like payment details and Diner credentials to prevent unauthorized access.  
 - **Scalability**: Designed with a microservices architecture, the platform supports horizontal scaling to handle a growing Diner base efficiently.  
-- **Performance Optimization**: Incorporates caching mechanisms and CDNs to deliver a seamless Diner experience with minimal latency.
+- **Performance Optimization**: Incorporates caching mechanisms and CDNs to deliver seamless Diner experience with minimal latency.
  
  
  
